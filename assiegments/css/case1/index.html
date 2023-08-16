@@ -2,536 +2,274 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>case 01</title>
-  <link rel="stylesheet" href="normalize.css">
-
-  <style>
- 
-    .first {
-
-      width: 100vw;
-      height: 100vh;
-     
-      
-    }
-
-    .first section {
-      width: 100vw;
-      height: 100vh;
-      position: absolute;
-
-
-    }
-
-    .first section>section:first-child {
-      width: 50vw;
-      height: 50vh;
-      background-color: red;
-      left: 0;
-      top: 0;
-
-
-    }
-
-
-    .first section>section:nth-child(2) {
-      width: 50vw;
-      height: 50vh;
-      background-color: green;
-      right: 0;
-      top: 0;
-
-
-    }
-
-
-    .first section>section:nth-child(3) {
-      width: 50vw;
-      height: 50vh;
-      background-color: orange;
-      bottom: 0;
-      left: 0;
-
-
-    }
-
-
-    .first section>section:nth-child(4) {
-      width: 50vw;
-      height: 50vh;
-      background-color: deeppink;
-      right: 0;
-      bottom: 0;
-
-
-    }
-
-
-
-    .first section>section>div {
-      width: 20%;
-      height: 40%;
-      border-radius: 100%;
-      background-color: white;
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-
-
-    }
-
-    .first section>section>div>div {
-      width: 5vw;
-      height: 10vh;
-      background-color: red;
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-
-    }
-
-    .first section:nth-child(5) {
-
-      width: 5vw;
-      height: 10vh;
-      background-color: white;
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-
-    }
-
-
-
-    .first section:nth-child(5)>div {
-
-      width: 40%;
-      height: 40%;
-      background-color: red;
-      position: absolute;
-      border-radius: 100%;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-
-    }
-
-
-    .first section>div:nth-child(6) {
-
-      width: 3vw;
-      height: 6vh;
-      background-color: white;
-      border-bottom-right-radius: 180px;
-      position: absolute;
-      left: 0;
-      top: 0;
-
-
-    }
-
-
-    .first section>div:nth-child(7) {
-
-      width: 3vw;
-      height: 6vh;
-      background-color: white;
-      border-bottom-left-radius: 180px;
-      position: absolute;
-      right: 0;
-      top: 0;
-
-
-    }
-
-
-    .first section>div:nth-child(8) {
-
-      width: 3vw;
-      height: 6vh;
-      background-color: white;
-      border-top-right-radius: 180px;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-
-
-    }
-
-    .first section>div:nth-child(9) {
-
-      width: 3vw;
-      height: 6vh;
-      background-color: white;
-      border-top-left-radius: 180px;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-
-
-    }
-
-    .first section>div:nth-child(10) {
-      width: 100px;
-      height: 50px;
-      background-color: white;
-      border-radius: 0 0 5rem 5rem;
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      margin: auto;
-
-
-
-    }
-
-    .first section>div:nth-child(11) {
-      width: 100px;
-      height: 50px;
-      background-color: white;
-      border-radius: 5rem 5rem 0 0;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      margin: auto;
-
-    }
-
-    /* //////////////////////////////////////////////////////////////////////////////// */
-
-
-    .second {
-      width: 100vw;
-      height: 100vh;
-      
-
-
-    }
-
-    .second section {
-      width: 100vw;
-      height: 100vh;
-      position: absolute;
-
-
-    }
-
-    .second section>section:first-child {
-      width: 50vw;
-      height: 50vh;
-      background-color: red;
-      left: 0;
-      top: 0;
-
-
-    }
-
-
-    .second section>section:nth-child(2) {
-      width: 50vw;
-      height: 50vh;
-      background-color: green;
-      right: 0;
-      top: 0;
-
-
-    }
-
-
-    .second section>section:nth-child(3) {
-      width: 50vw;
-      height: 50vh;
-      background-color: orange;
-      bottom: 0;
-      left: 0;
-
-
-    }
-
-
-    .second section>section:nth-child(4) {
-      width: 50vw;
-      height: 50vh;
-      background-color: deeppink;
-      right: 0;
-      bottom: 0;
-
-
-    }
-
-
-
-    .second section>section>div {
-      width: 20%;
-      height: 40%;
-      border-radius: 100%;
-      background-color: white;
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-
-
-    }
-
-    .second section>section>div>div {
-      width: 5vw;
-      height: 10vh;
-      background-color: red;
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-
-    }
-
-    .second section:nth-child(5) {
-
-      width: 5vw;
-      height: 10vh;
-      background-color: white;
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-
-    }
-
-    .second section:nth-child(5) {
-
-      width: 5vw;
-      height: 10vh;
-      background-color: white;
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-
-    }
-
-    .second section:nth-child(5)>div {
-
-      width: 40%;
-      height: 40%;
-      background-color: red;
-      position: absolute;
-      border-radius: 100%;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-
-    }
-
-
-    .second section>div:nth-child(6) {
-
-      width: 3vw;
-      height: 6vh;
-      background-color: white;
-      border-bottom-right-radius: 180px;
-      position: absolute;
-      left: 0;
-      top: 0;
-
-
-    }
-
-
-    .second section>div:nth-child(7) {
-
-      width: 3vw;
-      height: 6vh;
-      background-color: white;
-      border-bottom-left-radius: 180px;
-      position: absolute;
-      right: 0;
-      top: 0;
-
-
-    }
-
-
-    .second section>div:nth-child(8) {
-
-      width: 3vw;
-      height: 6vh;
-      background-color: white;
-      border-top-right-radius: 180px;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-
-
-    }
-
-    .second section>div:nth-child(9) {
-
-      width: 3vw;
-      height: 6vh;
-      background-color: white;
-      border-top-left-radius: 180px;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-
-
-    }
-
-    .second section>div:nth-child(10) {
-      width: 100px;
-      height: 50px;
-      background-color: white;
-      border-radius: 0 0 5rem 5rem;
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      margin: auto;
-
-
-
-    }
-
-    .second section>div:nth-child(11) {
-      width: 100px;
-      height: 50px;
-      background-color: white;
-      border-radius: 5rem 5rem 0 0;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      margin: auto;
-
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>case 01</title>
+    <link rel="stylesheet" href="normalize.css">
+
+    <style>
+        section {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+
+        }
+
+        section>section:first-child {
+            width: 50vw;
+            height: 50vh;
+            background-color: red;
+            left: 0;
+            top: 0;
+        }
+
+
+        section>section:nth-child(2) {
+            width: 50vw;
+            height: 50vh;
+            background-color: green;
+            right: 0;
+            top: 0;
+        }
+
+
+        section>section:nth-child(3) {
+            width: 50vw;
+            height: 50vh;
+            background-color: orange;
+            bottom: 0;
+            left: 0;
+        }
+
+
+        section>section:nth-child(4) {
+            width: 50vw;
+            height: 50vh;
+            background-color: deeppink;
+            right: 0;
+            bottom: 0;
+        }
+
+
+
+        section>section>div {
+            width: 20%;
+            height: 40%;
+            border-radius: 100%;
+            background-color: white;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+
+        }
+
+        section>section>div>div {
+            width: 5vw;
+            height: 10vh;
+            background-color: red;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+
+        }
+
+        section:nth-child(5) {
+            width: 5vw;
+            height: 10vh;
+            background-color: white;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+
+        }
+
+
+
+        section:nth-child(5)>div {
+            width: 40%;
+            height: 40%;
+            background-color: red;
+            position: absolute;
+            border-radius: 100%;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+
+        section>div:nth-child(6) {
+
+            width: 3vw;
+            height: 6vh;
+            background-color: white;
+            border-bottom-right-radius: 180px;
+            position: absolute;
+            left: 0;
+            top: 0;
+
+        }
+
+
+        section>div:nth-child(7) {
+            width: 3vw;
+            height: 6vh;
+            background-color: white;
+            border-bottom-left-radius: 180px;
+            position: absolute;
+            right: 0;
+            top: 0;
+
+        }
+
+
+        section>div:nth-child(8) {
+            width: 3vw;
+            height: 6vh;
+            background-color: white;
+            border-top-right-radius: 180px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+        }
+
+        section>div:nth-child(9) {
+            width: 3vw;
+            height: 6vh;
+            background-color: white;
+            border-top-left-radius: 180px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+
+        }
+
+        section>div:nth-child(10) {
+            width: 100px;
+            height: 50px;
+            background-color: white;
+            border-radius: 0 0 5rem 5rem;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+
+        }
+
+        section>div:nth-child(11) {
+            width: 100px;
+            height: 50px;
+            background-color: white;
+            border-radius: 5rem 5rem 0 0;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+
+        }
+
+        .first {
+            position: relative;
+        }
+
+    </style>
 </head>
 
 <body>
 
-  <section class="first">
-    <Section>
-      <section>
-        <div>
-          <div></div>
-        </div>
-      </section>
 
 
-      <section>
-        <div>
-          <div></div>
-        </div>
-      </section>
+    <Section class="first">
 
+        <section>
+            <div>
+                <div></div>
+            </div>
+        </section>
 
-      <section>
-        <div>
-          <div></div>
-        </div>
-      </section>
+        <section>
+            <div>
+                <div></div>
+            </div>
+        </section>
 
-      <section>
-        <div>
-          <div></div>
-        </div>
-      </section>
+        <section>
+            <div>
+                <div></div>
+            </div>
+        </section>
 
-      <section>
+        <section>
+            <div>
+                <div></div>
+            </div>
+        </section>
+
+        <section>
+            <div></div>
+        </section>
+
         <div></div>
-      </section>
-
-      <div></div>
-      <div></div>
-
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
 
     </Section>
 
-  </section>
+    <!-- ///////////////////////////////////////////////////////////////// -->
 
+    <Section class="first">
+        <section>
+            <div>
+                <div></div>
+            </div>
+        </section>
 
+        <section>
+            <div>
+                <div></div>
+            </div>
+        </section>
 
-  <!-- ///////////////////////////////////////////////////////////////// -->
+        <section>
+            <div>
+                <div></div>
+            </div>
+        </section>
 
-  <section class="second">
-    <Section>
-      <section>
-        <div>
-          <div></div>
-        </div>
-      </section>
+        <section>
+            <div>
+                <div></div>
+            </div>
+        </section>
 
+        <section>
+            <div></div>
+        </section>
 
-      <section>
-        <div>
-          <div></div>
-        </div>
-      </section>
-
-
-      <section>
-        <div>
-          <div></div>
-        </div>
-      </section>
-
-      <section>
-        <div>
-          <div></div>
-        </div>
-      </section>
-
-      <section>
         <div></div>
-      </section>
-
-      <div></div>
-      <div></div>
-
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
 
     </Section>
-
-
-
-
-  </section>
-
-
-
-
 
 </body>
 
