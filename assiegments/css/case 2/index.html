@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Serif+Vithkuqi:wght@400;500;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,400&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Noto Serif Vithkuqi', serif;
+            font-family: 'Poppins', sans-serif;
+            width: 100vw;
+            height: 100vh;
+
+        }
+
+        header {
+            width: 100vw;
+            height: 10vh;
+            /* background-color: aqua; */
+            text-align: center;
+
+        }
+
+        header img {
+            position: relative;
+            top: 20px;
+        }
+
+        header>nav {
+            display: inline-block;
+            margin-left: 60%;
+
+        }
+
+        header>nav>ul>li {
+            display: inline-block;
+            margin: 0 0 0 40px;
+        }
+
+        header>nav>ul>li>a {
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 20px;
+            color: black;
+
+        }
+
+        main {
+            width: 100vw;
+            height: 85vh;
+            position: relative;
+            /* background-color: lawngreen; */
+        }
+
+        main>div {
+            width: 20vw;
+            height: 85vh;
+            background-color: #4C0182;
+            position: absolute;
+        }
+
+        main>div>nav>ul>li {
+            margin-top: 40px;
+            display: block;
+        }
+
+        main>div>nav>ul>li>a {
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            font-weight: 600;
+
+        }
+
+        main>aside {
+            width: 80vw;
+            height: 85vh;
+            position: absolute;
+            border-top: 4px solid black;
+            box-sizing: border-box;
+            right: 0;
+            top: 0;
+            /* background-color: lightcoral; */
+        }
+
+        main>aside>section {
+            width: 80vw;
+            height: 40vh;
+            /* background-color: blueviolet; */
+            margin-top: 20px;
+            justify-content: center;
+            display: flex;
+        }
+
+        main>aside>article {
+            width: 80vw;
+            height: 40vh;
+            /* background-color: blueviolet; */
+            position: absolute;
+            box-sizing: border-box;
+            overflow: auto;
+
+        }
+
+        main>aside>article>p {
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        main>aside>section>div>img:nth-child(1) {
+            border-top: 2px solid red;
+            border-left: 2px solid red;
+            border-right: 2px solid green;
+            border-bottom: 2px solid green;
+            width: 100%;
+
+        }
+
+        main>aside>section>div>img:nth-child(2) {
+            border-top: 2px solid red;
+            border-right: 2px solid green;
+            border-bottom: 2px solid green;
+            width: 100%;
+
+        }
+
+        main>aside>section>div>img:nth-child(3) {
+            border-top: 2px solid red;
+            border-right: 2px solid red;
+            border-bottom: 2px solid green;
+            width: 100%;
+        }
+
+        body>footer {
+            width: 100vw;
+            height: 5vh;
+            background-color: gray;
+            position: absolute;
+            text-align: center;
+        }
+
+        body>footer p {
+            font-size: 18px;
+            font-weight: 700;
+            align-items: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="assets/ijse.jpeg" alt="ijse logo" >
+        <nav>
+            <ul>
+                <li> <a href="https://www.ijse.lk/">Home</a></li>
+                <li> <a href="https://www.ijse.lk/">Services</a></li>
+                <li> <a href="https://www.ijse.lk/">Contact us</a></li>
+                <li> <a href="https://www.ijse.lk/">About us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <div>
+            <nav>
+                <ul>
+                    <li> <a href="https://www.ijse.lk/">Home</a></li>
+                    <li> <a href="https://www.ijse.lk/">Services</a></li>
+                    <li> <a href="https://www.ijse.lk/">Contact us</a></li>
+                    <li> <a href="https://www.ijse.lk/">About us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <aside>
+            <section>
+                <div>
+                    <img src="assets/monkey-swinging.gif" alt="monkey">
+                </div>
+
+                <div>
+                    <img src="assets/monkey-swinging.gif" alt="monkey">
+                </div>
+
+                <div>
+                    <img src="assets/monkey-swinging.gif" alt="monkey">
+                </div>
+
+            </section>
+            <article>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis architecto
+                    optio qui necessitatibus sit perferendis saepe tempora aliquam exercitationem
+                    sapiente sed repudiandae maiores, dolorum dolor iusto corrupti numquam! Molestiae,
+                    delectus!</p>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis architecto
+                    optio qui necessitatibus sit perferendis saepe tempora aliquam exercitationem
+                    sapiente sed repudiandae maiores, dolorum dolor iusto corrupti numquam! Molestiae,
+                    delectus!</p>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis architecto
+                    optio qui necessitatibus sit perferendis saepe tempora aliquam exercitationem
+                    sapiente sed repudiandae maiores, dolorum dolor iusto corrupti numquam! Molestiae,
+                    delectus!</p>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis architecto
+                    optio qui necessitatibus sit perferendis saepe tempora aliquam exercitationem
+                    sapiente sed repudiandae maiores, dolorum dolor iusto corrupti numquam! Molestiae,
+                    delectus!</p>
+
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis architecto
+                    optio qui necessitatibus sit perferendis saepe tempora aliquam exercitationem
+                    sapiente sed repudiandae maiores, dolorum dolor iusto corrupti numquam! Molestiae,
+                    delectus!</p>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis architecto
+                    optio qui necessitatibus sit perferendis saepe tempora aliquam exercitationem
+                    sapiente sed repudiandae maiores, dolorum dolor iusto corrupti numquam! Molestiae,
+                    delectus!</p>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis architecto
+                    optio qui necessitatibus sit perferendis saepe tempora aliquam exercitationem
+                    sapiente sed repudiandae maiores, dolorum dolor iusto corrupti numquam! Molestiae,
+                    delectus!</p>
+
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis architecto
+                    optio qui necessitatibus sit perferendis saepe tempora aliquam exercitationem
+                    sapiente sed repudiandae maiores, dolorum dolor iusto corrupti numquam! Molestiae,
+                    delectus!</p>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis architecto
+                    optio qui necessitatibus sit perferendis saepe tempora aliquam exercitationem
+                    sapiente sed repudiandae maiores, dolorum dolor iusto corrupti numquam! Molestiae,
+                    delectus!</p>
+            </article>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Developed By IJSE</p>
+
+    </footer>
+
+</body>
+
+</html>
