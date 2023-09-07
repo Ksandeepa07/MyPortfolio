@@ -20,14 +20,18 @@
         body {
             width: 100vw;
             height: 100vh;
-            font-size: 0px;
+            box-shadow: 1px 1px 1px 1px black;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+           
+        
         }
 
         div {
-            width: 25vw;
-            height: 33.33vh;
+           
             background-color: red;
-            display: inline-block;
+           
         }
 
         div:nth-child(1) {
@@ -82,8 +86,7 @@
 </head>
 
 <body>
-    <main>
-
+    
         <div></div>
         <div></div>
         <div></div>
@@ -97,7 +100,7 @@
         <div></div>
         <div></div>
 
-    </main>
+   
 
 </body>
 
