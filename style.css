@@ -1,107 +1,67 @@
 * {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
-body {
-    /* background-color: #242432  ; */
-    margin: 0;
-    padding: 0;
-}
 
-header {
-    width: 6vw;
-    height: 100vh;
+header{
+    width: 100vw;
+    height: 8vh;
+    background-image: linear-gradient(141deg, #191E23 0%, #242342 74%);
     position: fixed;
     top: 0;
-    background-image: linear-gradient(141deg, #191E23 0%, #242342 74%);
+    z-index: 2;
+    
 }
 
-header nav ul li {
+header h1{
+    color: aqua;
+    margin-left: 40px;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin-right: 40px;
+    
+}
+header nav ul li a{
     list-style: none;
-    font-size: 20px;
+    text-decoration: none;
+    color: aqua;
+    font-weight: 700;
 }
 
-header nav {
-    width: 4vw;
-    height: 50vh;
-    box-shadow: 3px 3px 2px 2px black;
-    border-radius: 30px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-}
-
-header nav ul {
+header nav ul{
     width: max-content;
     height: max-content;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 40px;
     bottom: 0;
-    left: 0;
     margin: auto;
-    padding: 0;
-    margin-top: 15px;
 }
 
-header nav ul li a i {
-    margin-bottom: 50px;
-}
-
-header nav ul li a {
-    color: #02ECFF;
-}
-
-header a:nth-child(2) i {
-    position: absolute;
-    bottom: 30px;
-    left: 35px;
-    margin: auto;
-    font-size: 50px;
-    color: #02ECFF;
-}
-
-
-/* ///////////////////////start hompage section////////////////// */
-
-main{
-    height: 1000vh;
-    overflow: hidden;
+main {
     background-image: linear-gradient(141deg, #191E23 0%, #242342 74%);
+    font-size: 0;
+    
 }
 
-main section:nth-child(1){
-    width: 94vw;
-    height: 100vh;
-    /* background-image: linear-gradient(141deg, #191E23 0%, #242342 74%); */
-    margin-left: 6vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-}
 
 main section:nth-child(1) section:nth-child(1){
-    width: 94vw;
-    height: 90vh;
-    /* background-color: bisque; */
-    margin: 0;    
-}
-
-
-main section:nth-child(1) section section:nth-child(1){
+    height: 100vh;
     width: 60vw;
-    height: 90vh;
-    /* background-color: green; */
-    margin: 0;
+    /* background-color: #191E23; */
     position: relative;
+    top: 8vh;
+    margin: 0;
+    display: inline-block;
+    
 }
 
-main section:nth-child(1) section section:nth-child(1) div{
+main section:nth-child(1)  section:nth-child(1) div{
     height: 50vh;
     line-height: 6rem; 
     position: absolute;
@@ -112,7 +72,7 @@ main section:nth-child(1) section section:nth-child(1) div{
     margin:auto;
 }
 
-main section:nth-child(1) section section:nth-child(1) div h1{
+main section:nth-child(1)  section:nth-child(1) div h1{
     font-size: 80px;
     color: #fff;
     font-weight: 700;
@@ -120,12 +80,11 @@ main section:nth-child(1) section section:nth-child(1) div h1{
     margin: auto;
 }
 
-
-main section:nth-child(1) section section:nth-child(1) div h1 span{
+main section:nth-child(1)  section:nth-child(1) div h1 span{
     color: #02ECFF;
 }
 
-main section:nth-child(1) section section:nth-child(1) div p{
+main section:nth-child(1)  section:nth-child(1) div p{
     color: #fff;
     /* font-family: "poppins"; */
     font-size: 20px;
@@ -134,7 +93,7 @@ main section:nth-child(1) section section:nth-child(1) div p{
     line-height: 2rem;
 }
 
-main section:nth-child(1) section section:nth-child(1) div button:nth-child(5){
+main section:nth-child(1)  section:nth-child(1) div button:nth-child(5){
     padding: 8px 28px;
     display: inline-block;
     text-align: center;
@@ -152,14 +111,14 @@ main section:nth-child(1) section section:nth-child(1) div button:nth-child(5){
     margin-top: 20px;
 }
 
-main section:nth-child(1) section section:nth-child(1) div button:nth-child(5):hover{
+main section:nth-child(1)  section:nth-child(1) div button:nth-child(5):hover{
     color: white;
     border: 1px solid #02ECFF;
     border-radius: 10px;
     background-position: right bottom;
 }
 
-main section:nth-child(1) section section:nth-child(1) div button:nth-child(4){
+main section:nth-child(1)   section:nth-child(1) div button:nth-child(4){
     border: 1px solid #02ECFF;
     border-radius: 10px;
     padding: 8px 28px;
@@ -176,34 +135,32 @@ main section:nth-child(1) section section:nth-child(1) div button:nth-child(4){
 
 }
 
-main section:nth-child(1) section section:nth-child(1) div button:nth-child(4):hover{
+main section:nth-child(1)   section:nth-child(1) div button:nth-child(4):hover{
     color: black;
     background-position: left bottom;
 }
 
-/* /////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+
 
 
 main section:nth-child(1) aside:nth-child(2){
+    height: 100vh;
     width: 35vw;
-    height: 90vh;
-    /* background-color: brown; */
+    /* background-color: red; */
     position: relative;
-}
-
-main section:nth-child(1) div:nth-child(4){
-    width: 0;
-    height: 0;
-    border-bottom: 980px solid #02ECFF;
-    border-left: 1150px solid transparent;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    top: 8vh;
+    margin: 0;
+    display: inline-block;
+    
 }
 
 main section:nth-child(1) aside:nth-child(2) div:nth-child(1){
-    width: 80%;
-    height: 70%;
+    width: 70%;
+    height: 60%;
     background: url("assets/resources//images/IMG_20221012_184847_563.jpg");
     background-position: center;
     background-size: cover;
@@ -225,14 +182,32 @@ main section:nth-child(1) aside:nth-child(2) div:nth-child(1):hover{
     box-shadow: inset 0 0 0.5em 0 #02ECFF, 0 0 0.5em 0 #02ECFF;
 }
 
-main section:nth-child(1) section:nth-child(3){
-    width: 5vw;
-    height: 90vh;
+
+
+
+
+
+
+
+
+
+
+
+
+
+main section:nth-child(1) aside:nth-child(3){
+    height: 100vh;
+    width: 4vw;
     /* background-color: darkblue; */
     position: relative;
+    top: 8vh;
+    margin: 0;
+    display: inline-block;
+    
+    
 }
 
-main section:nth-child(1) section:nth-child(3) div{
+main section:nth-child(1) aside:nth-child(3) div{
     width: 3vw;
     height: 40vh;
     border-radius: 30px;
@@ -254,11 +229,11 @@ main section:nth-child(1) section:nth-child(3) div{
 }
 
 
-main section:nth-child(1) section:nth-child(3) div a {
+main section:nth-child(1) aside:nth-child(3) div a {
     text-decoration: none;
 }
 
-main section:nth-child(1) section:nth-child(3) div a i{
+main section:nth-child(1) aside:nth-child(3) div a i{
        color: black;
        width: 40px;
        height: 40px;
@@ -274,22 +249,37 @@ main section:nth-child(1) section:nth-child(3) div a i{
 }
 
 
-
-
-/* ///////////////////////start service section////////////////// */
-
-
-
-
-main section:nth-child(2){
-    width: 94vw;
-    height: 100vh;
-    background-image: linear-gradient(141deg, #191E23 0%, #242342 74%);
-    /* background: red; */
-    margin-left: 6vw;
-    position: relative;
+main section:nth-child(1) div:nth-child(4){
+    width: 0;
+    height: 0;
+    border-bottom: 980px solid #02ECFF;
+    border-left: 1150px solid transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main>section:nth-child(2){
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(141deg, #191E23 0%, #242342 74%);
+    position: relative;
+}
 
 main section:nth-child(2) h1:nth-child(1){
     font-size: 50px;
@@ -332,93 +322,99 @@ main section:nth-child(2) section:nth-child(2) div{
 
 }
 
+main section:nth-child(2) section:nth-child(2) div p{
+    font-size: 18px;
+}
+
 main section:nth-child(2) section:nth-child(2) div div div:nth-child(2) img:nth-child(1){
-   margin-top: 20px;
-   margin-left: 20px;
-}
-
-main section:nth-child(2) section:nth-child(2) div div div:nth-child(2) h1{
-    margin-top: 40px;
-    margin-left: 10px;
-}
-
-main section:nth-child(2) section:nth-child(2) div div div:nth-child(2) p{
-    margin-left: 10px;
-}
-
- .arrow i{
-   position: absolute;
-   right: 20px;
-   bottom: 20px;
-   font-size: 30px;
-   color: #02ECFF;
-}
-
-
-
-.inner{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 2s;
-    transform-style: preserve-3d;
-}
-
-main section:nth-child(2) section:nth-child(2) div div:nth-child(1)  , main section:nth-child(2) section:nth-child(2) div div:nth-child(2) {
+    margin-top: 20px;
+    margin-left: 20px;
+ }
+ 
+ main section:nth-child(2) section:nth-child(2) div div div:nth-child(2) h1{
+     margin-top: 40px;
+     margin-left: 10px;
+ }
+ 
+ main section:nth-child(2) section:nth-child(2) div div div:nth-child(2) p{
+     margin-left: 10px;
+ }
+ 
+  .arrow i{
     position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-main section:nth-child(2) section:nth-child(2) div div:nth-child(2){
-    transform: rotateY(180deg);
-}
-
-main section:nth-child(2) section:nth-child(2) div:hover .inner{
-    /* transform: translateY(-10px); */
-    transform: rotateY(180deg);
-}
-
-
+    right: 20px;
+    bottom: 20px;
+    font-size: 30px;
+    color: #02ECFF;
+ }
+ 
+ 
+ 
+ .inner{
+     position: relative;
+     width: 100%;
+     height: 100%;
+     transition: transform 2s;
+     transform-style: preserve-3d;
+ }
+ 
+ main section:nth-child(2) section:nth-child(2) div div:nth-child(1)  , main section:nth-child(2) section:nth-child(2) div div:nth-child(2) {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     -webkit-backface-visibility: hidden;
+     backface-visibility: hidden;
+ }
+ 
+ main section:nth-child(2) section:nth-child(2) div div:nth-child(2){
+     transform: rotateY(180deg);
+ }
+ 
+ main section:nth-child(2) section:nth-child(2) div:hover .inner{
+     /* transform: translateY(-10px); */
+     transform: rotateY(180deg);
+ }
+ 
+ 
+  
+ 
+ main section:nth-child(2) section:nth-child(2) div:nth-child(1) div:nth-child(1){
+     background: url("assets/resources/images/christopher-gower-m_HRfLhgABo-unsplash.jpg");
+     background-position: center;
+     background-size: cover;
+ }
+ 
+ main section:nth-child(2) section:nth-child(2) div:nth-child(2) div:nth-child(1){
+     background: url("assets/resources/images/alvaro-reyes-zvmZiw3vdsQ-unsplash.jpg");
+     background-position: center;
+     background-size: cover;
+ }
+ 
+ main section:nth-child(2) section:nth-child(2) div:nth-child(3) div:nth-child(1){
+     background: url("assets/resources/images/walling-JV_R_DNzIWU-unsplash.jpg");
+     background-position: center;
+     background-size: cover;
+ }
+ 
+ main section:nth-child(2) section:nth-child(2) div:nth-child(4) div:nth-child(1){
+     background: url("assets/resources/images/emily-bernal-BM3U_D2lygo-unsplash.jpg");
+     background-position: center;
+     background-size: cover;
+ }
+ 
+ main section:nth-child(2) section:nth-child(2) div:nth-child(5) div:nth-child(1){
+     background: url("assets/resources/images/william-hook-9e9PD9blAto-unsplash.jpg");
+     background-position: center;
+     background-size: cover;
+ }
+ 
+ main section:nth-child(2) section:nth-child(2) div:nth-child(6) div:nth-child(1){
+     background: url("assets/resources/images/lee-campbell-DtDlVpy-vvQ-unsplash.jpg");
+     background-position: center;
+     background-size: cover;
+ }
  
 
-main section:nth-child(2) section:nth-child(2) div:nth-child(1) div:nth-child(1){
-    background: url("assets/resources/images/christopher-gower-m_HRfLhgABo-unsplash.jpg");
-    background-position: center;
-    background-size: cover;
-}
-
-main section:nth-child(2) section:nth-child(2) div:nth-child(2) div:nth-child(1){
-    background: url("assets/resources/images/alvaro-reyes-zvmZiw3vdsQ-unsplash.jpg");
-    background-position: center;
-    background-size: cover;
-}
-
-main section:nth-child(2) section:nth-child(2) div:nth-child(3) div:nth-child(1){
-    background: url("assets/resources/images/walling-JV_R_DNzIWU-unsplash.jpg");
-    background-position: center;
-    background-size: cover;
-}
-
-main section:nth-child(2) section:nth-child(2) div:nth-child(4) div:nth-child(1){
-    background: url("assets/resources/images/emily-bernal-BM3U_D2lygo-unsplash.jpg");
-    background-position: center;
-    background-size: cover;
-}
-
-main section:nth-child(2) section:nth-child(2) div:nth-child(5) div:nth-child(1){
-    background: url("assets/resources/images/william-hook-9e9PD9blAto-unsplash.jpg");
-    background-position: center;
-    background-size: cover;
-}
-
-main section:nth-child(2) section:nth-child(2) div:nth-child(6) div:nth-child(1){
-    background: url("assets/resources/images/lee-campbell-DtDlVpy-vvQ-unsplash.jpg");
-    background-position: center;
-    background-size: cover;
-}
 
 
 
@@ -467,43 +463,232 @@ main section:nth-child(2) section:nth-child(2) div:nth-child(6) div:nth-child(1)
 
 
 
- .lol{
-    width: 94vw;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main section:nth-child(3){
+    width: 100%;
     height: 100vh;
-    background-color:black ;
-    margin-left: 6vw;
-    display: flex;
+    background-color: lightcoral;
+    position: relative;
 }
+
+main section:nth-child(3) h1:nth-child(1){
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    letter-spacing: 0.3rem;
+}
+
+main section:nth-child(3) h1:nth-child(1) span{
+    color: #02ECFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 main section:nth-child(4){
-    width: 94vw;
+    width: 100%;
     height: 100vh;
-    background-color:yellow ;
-    margin-left: 6vw;
-    display: flex;
+    background-color: lawngreen;
+    position: relative;
+}
+main section:nth-child(4) h1:nth-child(1){
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    letter-spacing: 0.3rem;
 }
 
+main section:nth-child(4) h1:nth-child(1) span{
+    color: #02ECFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 main section:nth-child(5){
-    width: 94vw;
+    width: 100%;
     height: 100vh;
-    background-color:hotpink ;
-    margin-left: 6vw;
-    display: flex;
-} 
+    background-color: navajowhite;
+    position: relative;
+}
+
+main section:nth-child(5) h1:nth-child(1){
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    letter-spacing: 0.3rem;
+}
+
+main section:nth-child(5) h1:nth-child(1) span{
+    color: #02ECFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 main section:nth-child(6){
-    width: 94vw;
+    width: 100%;
     height: 100vh;
-    background-color:darkgoldenrod ;
-    margin-left: 6vw;
-    display: flex;
-} 
+    background-color: brown;
+    position: relative;
+}
+
+
+main section:nth-child(6) h1:nth-child(1){
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    letter-spacing: 0.3rem;
+}
+
+main section:nth-child(6) h1:nth-child(1) span{
+    color: #02ECFF;
+}
+
+
+
 
 main section:nth-child(7){
-    width: 94vw;
+    width: 100%;
     height: 100vh;
-    background-color:lightblue ;
-    margin-left: 6vw;
-    display: flex;
-} 
+    background-color: cadetblue;
+    position: relative;
+}
+
+main section:nth-child(7) h1:nth-child(1){
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    letter-spacing: 0.3rem;
+}
+
+main section:nth-child(7) h1:nth-child(1) span{
+    color: #02ECFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+main section:nth-child(8){
+    width: 100%;
+    height: 100vh;
+    background-color: darkcyan;
+    position: relative;
+}
+
+main section:nth-child(8) h1:nth-child(1){
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    letter-spacing: 0.3rem;
+}
+
+main section:nth-child(8) h1:nth-child(1) span{
+    color: #02ECFF;
+}
+
+
+
+main section:nth-child(9){
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+}
+
+
+
+main section:nth-child(9) h1:nth-child(1){
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    letter-spacing: 0.3rem;
+}
+
+main section:nth-child(9) h1:nth-child(1) span{
+    color: #02ECFF;
+}
+
