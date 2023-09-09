@@ -32,6 +32,10 @@ header nav ul li a{
     font-weight: 700;
 }
 
+header nav ul li a:hover{
+    color: #fff;
+}
+
 header nav ul{
     width: max-content;
     height: max-content;
@@ -364,15 +368,18 @@ main section:nth-child(2) section:nth-child(2) div div div:nth-child(2) img:nth-
      height: 100%;
      -webkit-backface-visibility: hidden;
      backface-visibility: hidden;
+     border: transparent;
  }
  
  main section:nth-child(2) section:nth-child(2) div div:nth-child(2){
      transform: rotateY(180deg);
+   
  }
  
  main section:nth-child(2) section:nth-child(2) div:hover .inner{
      /* transform: translateY(-10px); */
      transform: rotateY(180deg);
+     
  }
  
  
@@ -382,6 +389,7 @@ main section:nth-child(2) section:nth-child(2) div div div:nth-child(2) img:nth-
      background: url("assets/resources/images/christopher-gower-m_HRfLhgABo-unsplash.jpg");
      background-position: center;
      background-size: cover;
+     
  }
  
  main section:nth-child(2) section:nth-child(2) div:nth-child(2) div:nth-child(1){
@@ -483,7 +491,8 @@ main section:nth-child(2) section:nth-child(2) div div div:nth-child(2) img:nth-
 main section:nth-child(3){
     width: 100%;
     height: 100vh;
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
+    background-image: linear-gradient(141deg, #191E23 0%, #242342 74%);
     position: relative;
 }
 
@@ -500,6 +509,167 @@ main section:nth-child(3) h1:nth-child(1) span{
     color: #02ECFF;
 }
 
+
+main>section:nth-child(3)>section:nth-child(2){
+    width: 80vw;
+    height: 70vh;
+    /* background-color: #02ECFF; */
+    position: absolute;
+    top: 40px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+   
+     
+
+}
+
+main>section:nth-child(3)>section:nth-child(2) aside{
+     width: 40vw;
+     height: 70vh;
+     /* background-color: bisque; */
+     display: inline-block;
+     position: relative;
+    
+}
+
+main>section:nth-child(3)>section:nth-child(2)>aside div:nth-child(1){
+    width: 14%;
+    height: 16%;
+    border-radius: 100%;
+    background-color: #02ECFF;
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main>section:nth-child(3)>section:nth-child(2)>aside div:nth-child(1) p{
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+main>section:nth-child(3)>section:nth-child(2)>aside div:nth-child(2){
+    width: 60%;
+    height: 70%;
+    border-radius: 100%;
+    background: #02ECFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+    
+
+
+}
+
+main>section:nth-child(3)>section:nth-child(2)>aside div:nth-child(2) img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 100px;
+    right: 0;
+    margin: auto; 
+}
+
+
+main>section:nth-child(3)>section:nth-child(2)>aside div:nth-child(3){
+    width: 14%;
+    height: 16%;
+    border-radius: 100%;
+    background-color: #02ECFF;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main>section:nth-child(3)>section:nth-child(2)>aside div:nth-child(3) p{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+main>section:nth-child(3)>section:nth-child(2)>section:nth-child(2){
+    width: 40vw;
+    height: 70vh;
+    /* background-color: red; */
+    position: absolute;
+    top: 0;
+    left: 40vw;
+}
+
+main>section:nth-child(3)>section:nth-child(2)>section:nth-child(2) article{
+    width: 30vw;
+    height: 30vh;
+    margin-left: 60px;
+}
+
+main>section:nth-child(3)>section:nth-child(2)>section:nth-child(2) article p{
+    font-size: 16px;
+    color: #fff;
+    font-weight:500;
+}
+
+main>section:nth-child(3)>section:nth-child(2)>section:nth-child(2) button:nth-child(2){
+    border: 1px solid #02ECFF;
+    border-radius: 10px;
+    padding: 8px 28px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    background: linear-gradient(to right, #02ECFF 50%, #242432 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    margin-top: 60px;
+
+}
+
+main>section:nth-child(3)>section:nth-child(2)>section:nth-child(2) button:nth-child(2):hover{
+    color: black;
+    background-position: left bottom;
+}
+
+
+main>section:nth-child(3)>section:nth-child(2)>section:nth-child(2) button:nth-child(3){
+    padding: 8px 28px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #02ECFF;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    background: linear-gradient(to left, #242432 50%, #02ECFF 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    transition: all .5s ease-out;
+    margin-left: 20px;
+    margin-top: 20px;
+    
+}
+
+
+main>section:nth-child(3)>section:nth-child(2)>section:nth-child(2) button:nth-child(3):hover{
+    color: white;
+    border: 1px solid #02ECFF;
+    border-radius: 10px;
+    background-position: right bottom;
+
+}
 
 
 
