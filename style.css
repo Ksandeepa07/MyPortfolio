@@ -1852,7 +1852,7 @@ footer>section:nth-child(5)>p {
         height: 100vh;
         background-image: linear-gradient(141deg, #191E23 0%, #242342 74%);
         position: relative;
-        /* display: none; */
+        display: none;
 
     }
 
