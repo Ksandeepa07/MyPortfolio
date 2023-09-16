@@ -1704,6 +1704,7 @@ footer>section:nth-child(5)>p {
 
     header>h1 {
         font-size: 15px;
+        margin-top: 25px;
     }
 
     header>a:nth-child(3)>i {
@@ -1897,7 +1898,7 @@ footer>section:nth-child(5)>p {
         height: 100vh;
         background-image: linear-gradient(141deg, #191E23 0%, #242342 74%);
         position: relative;
-        display: none;
+        /* display: none; */
 
     }
 
@@ -2276,6 +2277,88 @@ main section:nth-child(8)>section:nth-child(2)>div:nth-child(8) {
 
 
 
+
+
+/* /////////////section 08////////////////////////  */
+
+
+main>section:nth-child(9) {
+    width: 100%;
+    height: 140vh;
+    background-image: linear-gradient(141deg, #191E23 0%, #242342 74%);
+    position: relative;
+    /* display: none; */
+}
+
+main>section:nth-child(9)>section:nth-child(2) {
+    width: 80%;
+    height: 80%;
+   top: 0;
+}
+
+
+main>section:nth-child(9)>section:nth-child(2)>address {
+    width: 100%;
+    height: 45%;
+
+}
+
+main>section:nth-child(9)>section:nth-child(2)>aside {
+    width: 100%;
+    height: 58%;
+    bottom: -44px;
+}
+
+main>section:nth-child(9)>section:nth-child(2)>address>div {
+    width: 90%;
+    height: 10%;
+   
+}
+
+main>section:nth-child(9)>section:nth-child(2)>address>div>p:nth-child(1) {
+    padding-top: 6px;
+}
+
+main>section:nth-child(9)>section:nth-child(2)>address>div>p {
+    font-size: 10px;
+    margin-left: 68px;
+   
+}
+
+main>section:nth-child(9)>section:nth-child(2)>address>div>i {
+    font-size: 25px;
+   
+}
+
+main>section:nth-child(9)>section:nth-child(2)>address>div:nth-child(4)>div>i {
+    width: 10%;
+    height: 60%;
+    font-size: 18px;
+   
+}
+
+main>section:nth-child(9)>section:nth-child(2)>address>div {
+   
+    margin: 60px 10px;
+  
+}
+
+main>section:nth-child(9)>section:nth-child(2)>aside>fieldset>legend {
+    font-size: 26px;
+   
+}
+
+main>section:nth-child(9)>section:nth-child(2)>aside>fieldset>form>div>label {
+    font-size: 17px;
+   
+}
+
+main>section:nth-child(9)>section:nth-child(2)>aside>fieldset>form>button {
+    
+    padding: 4px 20px;
+    bottom: 6%;
+    right: 11%;
+}
     footer {
         display: none;
     }
