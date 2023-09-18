@@ -1713,7 +1713,7 @@ footer>section:nth-child(5)>p {
 
 /* /////////////////////////////start mobile design//////////////////////////////////////////////////////////////////////////////////////// */
 
-@media all and (min-width:320px) and (max-width:600px) {
+@media all and (min-width:320px) and (max-width:700px) {
 
     header nav ul {
         display: none;
@@ -1777,8 +1777,8 @@ footer>section:nth-child(5)>p {
     }
 
     main>section:nth-child(1)>section:nth-child(1)>div>div:nth-child(6) {
-        width: 65%;
-        height: 80%;
+        width: 260px;
+        height: 315px;
         top: 224px;
         bottom: 0px;
         right: 0;
@@ -1856,23 +1856,7 @@ footer>section:nth-child(5)>p {
 
     }
 
-    main>section:nth-child(2) {
-        width: 100%;
-        height: 100vh;
-        background-image: linear-gradient(141deg, #191E23 0%, #242342 74%);
-        position: relative;
-        /* display: none; */
-
-    }
-
-    main>section:nth-child(3) {
-        width: 100%;
-        height: 100vh;
-        background-image: linear-gradient(141deg, #191E23 0%, #242342 74%);
-        position: relative;
-        /* display: none; */
-
-    }
+    
 
     main>section:nth-child(4) {
         width: 100%;
@@ -1892,23 +1876,7 @@ footer>section:nth-child(5)>p {
 
     }
 
-    main>section:nth-child(6) {
-        width: 100%;
-        height: 100vh;
-        background-image: linear-gradient(141deg, #191E23 0%, #242342 74%);
-        position: relative;
-        /* display: none; */
-
-    }
-
-    main>section:nth-child(7) {
-        width: 100%;
-        height: 100vh;
-        background-image: linear-gradient(141deg, #191E23 0%, #242342 74%);
-        position: relative;
-        /* display: none; */
-
-    }
+    
 
     main>section:nth-child(8) {
         width: 100%;
@@ -1935,13 +1903,12 @@ footer>section:nth-child(5)>p {
     /* ////////////section 02//////////////////////// */
 
     main>section:nth-child(2) {
-
         height: 170vh;
 
     }
 
     main>section:nth-child(2)>section:nth-child(2) {
-        width: 55%;
+        width: 220px;
         height: 150vh;
         /* background-color: white; */
         grid-template-columns: 1fr;
@@ -2009,18 +1976,18 @@ footer>section:nth-child(5)>p {
 
     main>section:nth-child(3)>section:nth-child(2)>aside>div:nth-child(1),
     main>section:nth-child(3)>section:nth-child(2)>aside>div:nth-child(3) {
-        width: 18%;
-        height: 18%;
+        width: 80px;
+        height: 15%;
     }
 
     main>section:nth-child(3)>section:nth-child(2)>aside div:nth-child(2) {
-        width: 70%;
-        height: 70%;
+        width: 300px;
+        height: 55%;
     }
 
     main>section:nth-child(3)>section:nth-child(2)>aside div:nth-child(2)>img {
-       
-        bottom: -20px;
+       height: 200%;
+        bottom: 90px;
         
       
     }
@@ -2181,7 +2148,7 @@ main>section:nth-child(5)>div:nth-child(3) div {
    
 }
 
-img {
+.skillsCOntainer>div>img {
     
     width: 100%;
     height: 100%;
@@ -2232,12 +2199,13 @@ main>section:nth-child(7) {
 }
 
 main>section:nth-child(7)>section:nth-child(2) {
-    height: 95%;
-    padding: 80px 12%;
+    height: 85%;
+    padding: 0 0;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     row-gap: 3%;
     margin-top: 12%;
+    width: 310px;
 }
 
 main>section:nth-child(7)>div:nth-child(3) {
@@ -2258,7 +2226,7 @@ main>section:nth-child(7)>section:nth-child(2)>a:nth-child(5), main>section:nth-
 
 
 main>section:nth-child(8)>section:nth-child(2) {
-    width: 80%;
+    width: 300px;
     height: 100%;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(8, 1fr);
@@ -2330,7 +2298,7 @@ main>section:nth-child(9) {
 }
 
 main>section:nth-child(9)>section:nth-child(2) {
-    width: 80%;
+    width: 300px;
     height: 80%;
    top: 0;
 }
@@ -2369,10 +2337,16 @@ main>section:nth-child(9)>section:nth-child(2)>address>div>i {
    
 }
 
+main>section:nth-child(9)>section:nth-child(2)>address:nth-child(1)>div:nth-child(4)>div {
+    width: 100%; 
+    height: 100%;
+   
+}
+
 main>section:nth-child(9)>section:nth-child(2)>address>div:nth-child(4)>div>i {
     width: 10%;
     height: 60%;
-    font-size: 18px;
+    font-size: 14px;
    
 }
 
