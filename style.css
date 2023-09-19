@@ -1736,14 +1736,300 @@ footer>section:nth-child(5)>p {
     text-align: center;
     font-weight: 600;
 }
+/* /////////////////////////////start laptop design 02///////////////////////////*/
+@media all and (min-width:1441px) {
+
+    main>section:nth-child(1)>section:nth-child(1)>div>h1 {
+        font-size: 4vw;
+       
+    }
+
+    main>section:nth-child(1)>aside:nth-child(2)>div:nth-child(1) {
+        width: 455px;
+        height: 56%;
+      
+    }
+    main section:nth-child(1) div:nth-child(4) {
+       
+        border-bottom: 900px solid #02ECFF;
+        border-left: 870px solid transparent;
+       
+    }
+
+}
 
 
+/* /////////////////////////////start laptop design//////////////////////////////////////////////////////////////////////////////////////// */
+@media all and (min-width:1024px) and (max-width:1440px) {
+
+    header h1 {
+       
+        margin-left: 40px;
+        margin-top: 24px;
+    }
+
+    header nav ul li {
+       
+        margin-right: 14px;
+    }
+
+    header nav ul li a {
+    
+        font-size: 14px;
+    }
+
+    header nav ul {
+      
+        right: 0;
+        
+    }
+
+
+    main>section:nth-child(1)>section:nth-child(1)>div>p {
+        
+        font-size: 18px;
+       
+    }
+
+    main>section:nth-child(1)>section:nth-child(1)>div>h1 {
+        font-size: 4vw;
+       
+    }
+
+    main section:nth-child(1) div:nth-child(4) {
+       
+        border-bottom: 927px solid #02ECFF;
+        border-left: 620px solid transparent;
+
+    }
+
+
+
+    main>section:nth-child(1)>aside:nth-child(2)>div:nth-child(1) {
+        width: 305px;
+        height: 400px;
+        bottom: 0;
+       
+    }
+
+    main>section:nth-child(1)>section:nth-child(1)>div {
+       
+        bottom: -80px;
+        line-height: 7vw;
+        left: 45px;
+       
+    }
+
+    main>section:nth-child(1)>section:nth-child(1)>div>p:nth-child(3) {
+      line-height: 22px;
+        font-size: 18px;
+    }
+    .arrow i {
+        
+        right: 12px;
+        bottom: 9px;
+       
+    }
+
+    main>section>h1:nth-child(1) {
+        font-size: 44px;
+    }
+
+    main section:nth-child(1) aside:nth-child(3) div {
+       
+        height: 32vh;
+       
+    }
+    /* //////////////servicces section//////////////// */
+
+    main>section:nth-child(2)>section:nth-child(2) {
+        width: 900px;
+        height: 60vh;
+       
+    }
+
+    main section:nth-child(2) section:nth-child(2) div div div:nth-child(2) img:nth-child(1) {
+        margin-top: 5px;
+        margin-left: 11px;
+    }
+
+    main section:nth-child(2) section:nth-child(2) div p {
+        font-size: 10px;
+    }
+
+    main section:nth-child(2) section:nth-child(2) div div div:nth-child(2) h1 {
+        margin-top: 21px;
+        margin-left: 10px;
+        font-size: 22px;
+    }
+
+     /* //////////////about me section//////////////// */
+
+     main>section:nth-child(3)>section:nth-child(2) {
+        width: 800px;
+        height: 70vh;
+       
+       
+    }
+    main>section:nth-child(3)>section:nth-child(2)>aside>div:nth-child(1), main>section:nth-child(3)>section:nth-child(2)>aside>div:nth-child(3) {
+        width: 22%;
+        height: 14%;
+       
+    }
+    main>section:nth-child(3)>section:nth-child(2)>aside div:nth-child(2) {
+        width: 100%;
+        height: 70%;
+      
+    }
+
+    main>section:nth-child(3)>section:nth-child(2)>section:nth-child(2) {
+        width: 62%;
+        
+    }
+
+    main>section:nth-child(3)>section:nth-child(2)>section:nth-child(2) article {
+        width: 90%;
+        height: 65vh;
+        margin-left: 30px;
+        margin-top: 65px;
+    }
+
+    main>section:nth-child(3)>section:nth-child(2)>section:nth-child(2) article p {
+        font-size: 15px;
+       
+        font-weight: 400;
+    }
+
+
+    /* ////////////////////resume section/////////// */
+
+    main>section:nth-child(4)>section:nth-child(2)>div>div:nth-child(2)>h1 {
+        font-size: 20px;
+      
+    }
+
+    main>section:nth-child(4)>section:nth-child(2)>div:nth-child(1)>div:nth-child(2), main>section:nth-child(4)>section:nth-child(2)>div:nth-child(1)>div:nth-child(3), main>section:nth-child(4)>section:nth-child(2)>div:nth-child(1)>div:nth-child(4), main>section:nth-child(4)>section:nth-child(2)>div:nth-child(1)>div:nth-child(5), main>section:nth-child(4)>section:nth-child(2)>div:nth-child(1)>div:nth-child(6) {
+        width: 68%;
+       
+    }
+
+    main>section:nth-child(4)>section:nth-child(2)>div:nth-child(5) {
+       
+        top: 23%;
+    }
+
+    main>section:nth-child(4)>section:nth-child(2)>div:nth-child(6) {
+        
+        bottom: 23%;
+        
+    }
+
+    main>section:nth-child(4)>section:nth-child(2)>div:nth-child(1)>div:nth-child(5) {
+        top: 3%;
+    }
+
+    
+    main>section:nth-child(4)>section:nth-child(2)>div:nth-child(1)>div:nth-child(6) {
+        bottom: 4%;
+    }
+
+    main>section:nth-child(4)>section:nth-child(2)>div:nth-child(3)>div:nth-child(2)>div {
+        width: max-content;
+
+    }
+
+    main>section:nth-child(4)>section:nth-child(2)>div:nth-child(3)>div:nth-child(2)>div>img {
+        width: 26px;
+        margin: 0 20px;
+    }
+
+    /* ////////////skills section////////////////// */
+
+    .skillsCOntainer {
+        width: 960px;
+        top: 150px;
+      
+        padding: 0;
+    }
+
+    main>section:nth-child(5)>section:nth-child(4) {
+        
+        display: none;
+    }
+
+    .skillsCOntainer>div:nth-child(13){
+        display: none;
+    }
+
+    .skillsCOntainer>div:nth-child(14){
+        display: none;
+    }
+
+    main>section:nth-child(5)>div:nth-child(3)>a:nth-child(15)>i, main>section:nth-child(5)>div:nth-child(3)>a:nth-child(16)>i {
+      display: none;
+    }
+
+
+    /* ////////////projects section///////////// */
+
+    main>section:nth-child(6)>section:nth-child(2) {
+        width: 100%;
+        height: 60%;
+        column-gap: 25px;
+        padding: 80px 62px;
+    }
+
+    main>section:nth-child(6)>section:nth-child(2)>a:nth-child(4)>i {
+       
+        
+        left: 0;
+      
+    }
+
+    main>section:nth-child(6)>section:nth-child(2)>a:nth-child(5)>i {
+        
+        right: 0;
+      
+        padding-left: 64px;
+    }
+
+    /* ////////////assignments section///////////// */
+
+    main>section:nth-child(7)>section:nth-child(2) {
+        width: 100%;
+        height: 60%;
+        column-gap: 25px;
+        padding: 80px 62px;
+    }
+
+    main>section:nth-child(7)>section:nth-child(2)>a:nth-child(4)>i {
+       
+        
+        left: 0;
+      
+    }
+
+    main>section:nth-child(7)>section:nth-child(2)>a:nth-child(5)>i {
+        
+        right: 0;
+      
+        padding-left: 64px;
+    }
+
+
+    /* ///////galery section///////////// */
+
+    main>section:nth-child(8)>section:nth-child(2) {
+        width: 99%;
+       height: 60%;
+        gap: 4px;
+    }
+
+
+}
 
 /* /////////////////////////////start tablet design//////////////////////////////////////////////////////////////////////////////////////// */
-
-
-/* /////////////////////////////start tablet design//////////////////////////////////////////////////////////////////////////////////////// */
-@media all and (min-width:768px) and (max-width:1024px) {
+@media all and (min-width:768px) and (max-width:1023px) {
     header>h1 {
         font-size: 1rem;
         margin-top: 25px;
@@ -1759,7 +2045,9 @@ footer>section:nth-child(5)>p {
     }
     
     /* ////////////main////////// */
-    
+    main>section:nth-child(1)>section:nth-child(1){
+        top: 12vh;
+    }
     main>section:nth-child(1)>section:nth-child(1)>div { 
         line-height: 3rem;
        left: 20px;
@@ -1786,8 +2074,8 @@ footer>section:nth-child(5)>p {
     }
     
     main section:nth-child(1) div:nth-child(4) {
-        border-bottom: 742px solid #02ECFF;
-        border-left: 448px solid transparent;
+        border-bottom: 856px solid #02ECFF;
+        border-left: 410px solid transparent;
     }
 
     main>section:nth-child(1)>aside:nth-child(2)>div:nth-child(1) {
