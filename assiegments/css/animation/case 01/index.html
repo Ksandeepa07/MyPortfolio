@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Document</title>
+
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-name: case01;
+            border-radius: 40px;
+            left: 0;
+            animation-direction: alternate;
+
+
+        }
+
+        @keyframes case01 {
+            0% {
+
+                transform: rotate(270deg);
+                left: 0;
+                top: 0;
+            }
+
+            25% {
+
+                left: 500px;
+                top: 0;
+                background-color: blue;
+            }
+
+            50% {
+                top: 500px;
+                left: 500px;
+                background-color: olive;
+            }
+
+            75%{
+                left: 0;
+                top: 500px;
+                background-color: aqua;
+            }
+
+            100% {
+                top: 0;
+                left: 0;
+                background-color: red;
+                
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
