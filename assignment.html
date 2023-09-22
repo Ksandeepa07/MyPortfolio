@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/resources/normalize/normalize.css">
+
+    <style>
+        * {
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Noto Serif Vithkuqi', serif;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        section {
+            width: 100%;
+            height: max-content;
+            background-image: linear-gradient(141deg, #191E23 0%, #242342 74%);
+            /* background-color: blue; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        section>section {
+            width: 80%;
+            height: 800px;
+            /* background-color: red; */
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        section>section>div {
+            width: 300px;
+            height: 300px;
+            /* background-color: green; */
+            margin-left: 20px;
+            box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45),
+                25px 0px 20px -20px rgba(0, 0, 0, 0.45),
+                0px 25px 20px -20px rgba(0, 0, 0, 0.45),
+                -25px 0px 20px -20px rgba(0, 0, 0, 0.45);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        section>section>div>h1 {
+            text-align: center;
+            color: white;
+        }
+
+        section>section>div>div:nth-child(2) {
+            width: 90%;
+            height: 150px;
+            margin-top: 20px;
+            text-align: center;
+            background-color: red;
+        }
+
+        section>section>div:nth-child(1)>div:nth-child(2) {
+            background: url("assets/resources/images/assignments/case01.png");
+            background-position: center;
+            background-size: cover;
+        }
+
+
+        section>section>div:nth-child(2)>div:nth-child(2) {
+            background: url("assets/resources/images/assignments/case02.png");
+            background-position: center;
+            background-size: cover;
+        }
+
+
+        section>section>div:nth-child(3)>div:nth-child(2) {
+            background: url("assets/resources/images/assignments/case03.png");
+            background-position: center;
+            background-size: cover;
+        }
+
+
+        section>section>div:nth-child(4)>div:nth-child(2) {
+            background: url("assets/resources/images/assignments/case04.png");
+            background-position: center;
+            background-size: cover;
+        }
+
+
+        section>section>div:nth-child(5)>div:nth-child(2) {
+            background: url("assets/resources/images/assignments/case05.png");
+            background-position: center;
+            background-size: cover;
+        }
+
+        section>section>div>a:nth-child(3)>button {
+            width: max-content;
+            height: max-content;
+            padding: 6px 30px;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 16px;
+            background-color: #02ECFF;
+            /* background-size: 200% 100%; */
+            left: 0;
+            right: 0;
+            margin: auto;
+            bottom: 100%;
+            position: absolute;
+            transition-duration: 3s;
+        }
+
+        section>section>div:hover a:nth-child(3)>button {
+            transition-duration: 3s;
+            bottom: 50%;
+            z-index: 1;
+        }
+
+        section>section>div>div:nth-child(4) {
+            width: 100%;
+            height: 100%;
+            background-color: #191E23;
+            position: absolute;
+            top: 100%;
+            transition-duration: 3s;
+        }
+
+        section>section>div:hover>div:nth-child(4) {
+            transition-duration: 3s;
+            top: 0;
+            opacity: 0.4;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <section>
+            <div>
+                <h1>case 01</h1>
+                <div></div>
+                <a href="assiegments/css/case1/index.html" target="_blank"><button>view</button></a>
+                <div></div>
+            </div>
+            <div>
+                <h1>case 02</h1>
+                <div></div>
+                <a href="assiegments/css/case 2/index.html" target="_blank"><button>view</button></a>
+                <div></div>
+            </div>
+            <div>
+                <h1>case 03</h1>
+                <div></div>
+                <a href="assiegments/css/case 3/index .html" target="_blank"><button>view</button></a>
+                <div></div>
+            </div>
+            <div>
+                <h1>case 04</h1>
+                <div></div>
+                <a href="assiegments/css/case 4/index .html" target="_blank"><button>view</button></a>
+                <div></div>
+            </div>
+            <div>
+                <h1>case 05</h1>
+                <div></div>
+                <a href="assiegments/css/case 5/index.html" target="_blank"><button>view</button></a>
+                <div></div>
+            </div>
+        </section>
+
+    </section>
+
+</body>
+
+</html>

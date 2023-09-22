@@ -1292,7 +1292,7 @@ main>section:nth-child(7)>section:nth-child(2)>div>div:nth-child(4) {
     transition-duration: 3s;
 }
 
-main>section:nth-child(7)>section:nth-child(2)>div>button:nth-child(3) {
+main>section:nth-child(7)>section:nth-child(2)>div>a:nth-child(3)>button  {
     width: max-content;
     height: max-content;
     padding: 4px 20px;
@@ -1315,7 +1315,7 @@ main>section:nth-child(7)>section:nth-child(2)>div>button:nth-child(3) {
 
 }
 
-main>section:nth-child(7)>section:nth-child(2)>div:hover button {
+main>section:nth-child(7)>section:nth-child(2)>div:hover a:nth-child(3)>button  {
     transition-duration: 3s;
     bottom: 50%;
     z-index: 1;
