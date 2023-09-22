@@ -1910,6 +1910,9 @@ footer>section:nth-child(5)>p {
         height: max-content;
 
     }
+    section{
+        
+    }
 
     main>section:nth-child(1)>section:nth-child(1)>div>p:nth-child(3) {
         line-height: 22px;
