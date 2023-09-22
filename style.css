@@ -1907,6 +1907,7 @@ footer>section:nth-child(5)>p {
         bottom: -80px;
         line-height: 7vw;
         left: 45px;
+        height: max-content;
 
     }
 
