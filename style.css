@@ -90,7 +90,7 @@ header>a:nth-child(3)>i {
 
 ::-webkit-scrollbar {
     width: 12px;
-
+    
 }
 
 ::-webkit-scrollbar-thumb {
@@ -105,19 +105,18 @@ header>a:nth-child(3)>i {
     /* Color of the track (the non-draggable part) */
 }
 
-main>section:nth-child(1)>div:nth-child(6) {
+main>section:nth-child(1)>div:nth-child(6){
     width: 90%;
     height: max-content;
     display: flex;
     flex-direction: row;
     /* background-color: red; */
-    position: absolute;
+   position: absolute;
     bottom: 0;
     justify-content: space-between;
-
+    
 }
-
-main>section:nth-child(1)>div:nth-child(6)>img {
+main>section:nth-child(1)>div:nth-child(6)>img{
     width: 50px;
     height: 50px;
     animation-name: bubbles;
@@ -127,48 +126,42 @@ main>section:nth-child(1)>div:nth-child(6)>img {
     justify-content: space-between;
 }
 
-main>section:nth-child(1)>div:nth-child(6)>img:nth-child(2),
-main>section:nth-child(1)>div:nth-child(6)>img:nth-child(8) {
+main>section:nth-child(1)>div:nth-child(6)>img:nth-child(2),main>section:nth-child(1)>div:nth-child(6)>img:nth-child(8){
     animation-delay: 2s;
     opacity: 0;
 }
 
-main>section:nth-child(1)>div:nth-child(6)>img:nth-child(3),
-main>section:nth-child(1)>div:nth-child(6)>img:nth-child(12) {
+main>section:nth-child(1)>div:nth-child(6)>img:nth-child(3),main>section:nth-child(1)>div:nth-child(6)>img:nth-child(12){
     animation-delay: 4s;
     opacity: 0;
 }
 
-main>section:nth-child(1)>div:nth-child(6)>img:nth-child(4),
-main>section:nth-child(1)>div:nth-child(6)>img:nth-child(10) {
+main>section:nth-child(1)>div:nth-child(6)>img:nth-child(4),main>section:nth-child(1)>div:nth-child(6)>img:nth-child(10){
     animation-delay: 6s;
     opacity: 0;
 }
 
-main>section:nth-child(1)>div:nth-child(6)>img:nth-child(5),
-main>section:nth-child(1)>div:nth-child(6)>img:nth-child(13) {
+main>section:nth-child(1)>div:nth-child(6)>img:nth-child(5),main>section:nth-child(1)>div:nth-child(6)>img:nth-child(13){
     animation-delay: 7s;
     opacity: 0;
 }
 
-main>section:nth-child(1)>div:nth-child(6)>img:nth-child(6),
-main>section:nth-child(1)>div:nth-child(6)>img:nth-child(14) {
+main>section:nth-child(1)>div:nth-child(6)>img:nth-child(6),main>section:nth-child(1)>div:nth-child(6)>img:nth-child(14){
     animation-delay: 10s;
     opacity: 0;
 }
 
-main>section:nth-child(1)>div:nth-child(6)>img:nth-child(7),
-main>section:nth-child(1)>div:nth-child(6)>img:nth-child(15) {
+main>section:nth-child(1)>div:nth-child(6)>img:nth-child(7),main>section:nth-child(1)>div:nth-child(6)>img:nth-child(15){
     animation-delay: 12s;
     opacity: 0;
 }
 
-main>section:nth-child(1)>div:nth-child(6)>img:nth-child(9) {
+main>section:nth-child(1)>div:nth-child(6)>img:nth-child(9){
     animation-delay: 8s;
     opacity: 0;
 }
 
-main>section:nth-child(1)>div:nth-child(6)>img:nth-child(11) {
+main>section:nth-child(1)>div:nth-child(6)>img:nth-child(11){
     animation-delay: 9s;
     opacity: 0;
 }
@@ -177,33 +170,33 @@ main>section:nth-child(1)>div:nth-child(6)>img:nth-child(11) {
 
 
 @keyframes bubbles {
-    0% {
+    0%{
         bottom: 0;
         opacity: 0;
     }
 
-    20% {
-        opacity: 1;
+    20%{
+        opacity:1;
     }
 
-    40% {
+    40%{
         opacity: 0.8;
-
+       
     }
 
-    60% {
+    60%{
         opacity: 0.5;
-
+       
     }
 
-    80% {
+    80%{
         opacity: 0.3;
-
+       
     }
 
-    100% {
-        transform: translateY(-800px);
-        opacity: 0;
+    100%{
+       transform: translateY(-800px);
+       opacity: 0;
     }
 }
 
@@ -861,8 +854,7 @@ main>section:nth-child(4)>section:nth-child(2)>div>div:nth-child(2)>p {
     font-weight: 600;
 }
 
-main>section:nth-child(4)>section:nth-child(2)>div:nth-child(3)>div:nth-child(2)>h1,
-main>section:nth-child(4)>section:nth-child(2)>div:nth-child(6)>div:nth-child(2)>h1 {
+main>section:nth-child(4)>section:nth-child(2)>div:nth-child(3)>div:nth-child(2)>h1,main>section:nth-child(4)>section:nth-child(2)>div:nth-child(6)>div:nth-child(2)>h1{
     padding-top: 0;
 }
 
@@ -1243,7 +1235,7 @@ main>section:nth-child(6)>section:nth-child(2)>div:nth-child(3)>div:nth-child(2)
 
 
 
-
+ 
 
 
 /* //////////////////////////section 07/////////////////////////////////////////////////////////////////////////// */
@@ -1398,7 +1390,7 @@ main>section:nth-child(7)>a:nth-child(4)>i {
 }
 
 main>section:nth-child(7)>a:nth-child(5)>i {
-    display: none;
+   display: none;
 }
 
 main>section:nth-child(7)>div:nth-child(3) {
@@ -2153,7 +2145,7 @@ footer>section:nth-child(5)>p {
     }
 
     main>section:nth-child(6)>div:nth-child(3) {
-        display: none;
+       display: none;
     }
 
     /* ////////////assignments section///////////// */
@@ -2605,18 +2597,12 @@ footer>section:nth-child(5)>p {
     }
 
 
-    section {
-        
-    }
 
     /* /////////homepage//////////// */
 
 
     /* //////////////////////////////////////////////////// */
-    main>section:nth-child(1)>div:nth-child(6) {
 
-        display: none;
-    }
 
     main {
         box-sizing: border-box;
@@ -2723,7 +2709,7 @@ footer>section:nth-child(5)>p {
     }
 
     main>section:nth-child(1)>aside:nth-child(3) {
-        height: 0;
+       height: 0;
         width: 100%;
         display: block;
         top: 860px;
