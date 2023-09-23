@@ -13,7 +13,7 @@
             height: 100px;
             background-color: red;
             position: relative;
-            animation-duration: 2s;
+            animation-duration: 10s;
             animation-iteration-count: infinite;
             animation-name: case01;
             border-radius: 40px;
@@ -26,31 +26,35 @@
         @keyframes case01 {
             0% {
 
-                transform: rotate(270deg);
+                transform: rotate(0);
                 left: 0;
                 top: 0;
             }
 
             25% {
 
+                transform: rotate(180deg);
                 left: 500px;
                 top: 0;
                 background-color: blue;
             }
 
             50% {
+                transform: rotate(360deg);
                 top: 500px;
                 left: 500px;
                 background-color: olive;
             }
 
             75%{
+                transform: rotate(180deg);
                 left: 0;
                 top: 500px;
                 background-color: aqua;
             }
 
             100% {
+                transform: rotate(380deg);
                 top: 0;
                 left: 0;
                 background-color: red;
