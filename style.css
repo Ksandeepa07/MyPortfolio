@@ -117,8 +117,8 @@ main>section:nth-child(1)>div:nth-child(6){
     
 }
 main>section:nth-child(1)>div:nth-child(6)>img{
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     animation-name: bubbles;
     animation-duration: 6s;
     animation-iteration-count: infinite;
@@ -509,13 +509,42 @@ main section:nth-child(1) div:nth-child(4) {
   left: 40px;
 } */
 
-main>section:nth-child(1)>video:nth-child(5) {
-    width: 10%;
+main>section:nth-child(1)>a:nth-child(5)>i{
+    font-size: 60px;
     position: fixed;
     z-index: 2;
     bottom: 20px;
-    right: 40px;
+    left:  40px;
+    color: #02ECFF;
+    animation: play 2s linear infinite alternate;
+    
 }
+
+@keyframes play{
+    0%{
+        
+    }
+
+    25%{
+        filter: drop-shadow(2px 2px 100px  #02ECFF) drop-shadow(-2px -2px 20px  #02ECFF);
+        
+    }
+
+    50%{
+        filter: drop-shadow(5px 5px 140px  #02ECFF) drop-shadow(-5px -5px 30px  #02ECFF);
+ 
+    }
+
+    75%{
+        filter: drop-shadow(7px 7px 170px  #02ECFF) drop-shadow(-7px -7px 40px  #02ECFF);
+    }
+
+    100%{
+        filter: drop-shadow(20px 20px 200px  #02ECFF) drop-shadow(-20px -20px 50px  #02ECFF);
+    }
+    
+}
+
 
 /* ///////////////////////////////////section 02////////////////////////////////////////////////////////////////// */
 
