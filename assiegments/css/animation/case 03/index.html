@@ -16,23 +16,13 @@ body{
             height: 100vh;
             background-color: aqua;
             display: flex;
-            animation-duration: 5s;
-            animation-name: case03;
-            animation-iteration-count: 1;
-            animation-timing-function: linear;
-           animation-fill-mode: both;
-           animation-delay: 1s;
+            animation: case03 5s linear infinite alternate;
         }
 
         section>img{
             width: 100vw;
             height: 100vh;
         }
-
-       
-
-       
-
 
         @keyframes case03 {
 
@@ -55,12 +45,8 @@ body{
             100%{
                 margin-left: -400vw;
             }
-
-            
         }
-       
-
-        
+    
     </style>
 </head>
 

@@ -1949,6 +1949,12 @@ footer>section:nth-child(5)>p {
 
     }
 
+    main>section:nth-child(1)>div:nth-child(6)>img {
+        width: 30px;
+        height: 30px;
+        
+    }
+
     /* //////////////servicces section//////////////// */
 
     main>section:nth-child(2)>section:nth-child(2) {
@@ -2286,6 +2292,12 @@ footer>section:nth-child(5)>p {
 
     main>section:nth-child(1)>section:nth-child(1)>div>button:nth-child(4) {
         padding: 4px 10px;
+    }
+
+    main>section:nth-child(1)>div:nth-child(6)>img {
+        width: 20px;
+        height: 20px;
+      
     }
 
     /* ////////////////services secton//////////////// */
@@ -2732,6 +2744,11 @@ footer>section:nth-child(5)>p {
         height: 30px;
         font-size: 20px;
 
+    }
+
+    main>section:nth-child(1)>div:nth-child(6) {
+       
+        display: none;
     }
 
     /* /////////////////////////////////// */
