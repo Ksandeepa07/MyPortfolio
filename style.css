@@ -106,7 +106,7 @@ header>a:nth-child(3)>i {
 }
 
 main>section:nth-child(1)>div:nth-child(6) {
-    width: 90%;
+    width: 100%;
     height: max-content;
     display: flex;
     flex-direction: row;
@@ -1405,7 +1405,7 @@ main>section:nth-child(7)>section:nth-child(2)>div:nth-child(1)>div:nth-child(2)
 }
 
 main>section:nth-child(7)>section:nth-child(2)>div:nth-child(2)>div:nth-child(2) {
-    background: url("assets/resources/images/worpressWebsite.png");
+    background: url("assets/resources/vedios/animation\ case03.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
