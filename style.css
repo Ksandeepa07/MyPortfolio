@@ -2041,6 +2041,17 @@ footer>section:nth-child(5)>p {
 
 /* /////////////////////////////start laptop design 02///////////////////////////*/
 @media all and (min-width:1441px) {
+    main>section:nth-child(2)>svg:nth-child(3),main>section:nth-child(3)>svg:nth-child(3),main>section:nth-child(4)>svg:nth-child(3),
+main>section:nth-child(5)>svg:nth-child(4),main>section:nth-child(6)>svg:nth-child(3),main>section:nth-child(7)>svg:nth-child(3),
+main>section:nth-child(8)>svg:nth-child(3),main>section:nth-child(9)>svg:nth-child(3){
+    height: max-content;
+    position: absolute;
+    bottom: 0;
+    left: -170px;
+    top: 200px;
+    margin: auto;
+    transform: rotate(90deg);
+}
 
     main>section:nth-child(1) {
         width: 100%;
@@ -2664,8 +2675,7 @@ footer>section:nth-child(5)>p {
 
     main>section:nth-child(2)>svg:nth-child(3), main>section:nth-child(3)>svg:nth-child(3), main>section:nth-child(4)>svg:nth-child(3), main>section:nth-child(5)>svg:nth-child(4), main>section:nth-child(6)>svg:nth-child(3), main>section:nth-child(7)>svg:nth-child(3), main>section:nth-child(8)>svg:nth-child(3), main>section:nth-child(9)>svg:nth-child(3) {
      
-     
-        transform: rotate(90deg);
+    display: none;
     }
 
     main>section:nth-child(1) {
