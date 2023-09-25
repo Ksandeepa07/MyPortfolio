@@ -105,12 +105,15 @@ header>a:nth-child(3)>i {
     /* Color of the track (the non-draggable part) */
 }
 
-main>section:nth-child(1)>div:nth-child(6) {
+
+/* ////////bubbles animation////////////// */
+
+/* main>section:nth-child(1)>div:nth-child(6) {
     width: 100%;
     height: max-content;
     display: flex;
     flex-direction: row;
-    /* background-color: red; */
+   
     position: absolute;
     bottom: 0;
     justify-content: space-between;
@@ -205,7 +208,114 @@ main>section:nth-child(1)>div:nth-child(6)>img:nth-child(11) {
         transform: translateY(-800px);
         opacity: 0;
     }
+} */
+
+/* ////////end////////////// */
+
+
+
+/* ////////////snow animation/////////////////// */
+.snowflake{
+  
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 0 0 1px #000;
+    position: fixed;   
+    z-index:9999;
+    animation-name:snowflakes-fall,snowflakes-shake;
+    animation-duration:10s,3s;
+    animation-timing-function:linear,ease-in-out;
+    animation-iteration-count:infinite,infinite;
+  
 }
+
+@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}
+@keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}
+
+    .snowflake:nth-child(1){
+        color: #02ECFF;
+        left:1%;animation-delay:0s,0s
+    }
+    .snowflake:nth-child(2){
+        color: #fff;
+        left:10%;animation-delay:1s,1s
+    }
+    .snowflake:nth-child(3){
+        color: #02ECFF;
+        left:20%;animation-delay:6s,.5s
+    }
+    .snowflake:nth-child(4){
+        color: #fff;
+        left:30%;animation-delay:4s,2s
+    }
+    .snowflake:nth-child(5){
+        color: #02ECFF;
+        left:40%;animation-delay:2s,2s
+    }
+    .snowflake:nth-child(6){
+        color: #fff;
+        left:50%;animation-delay:8s,3s
+    }
+    .snowflake:nth-child(7){
+        color: #02ECFF;
+        left:60%;animation-delay:6s,2s
+    }
+    .snowflake:nth-child(8){
+        color: #02ECFF;
+        left:70%;animation-delay:2.5s,1s
+    }
+    .snowflake:nth-child(9){
+        color: #02ECFF;
+        left:80%;animation-delay:1s,0s}
+    .snowflake:nth-child(10){
+        color: #fff;
+        left:90%;animation-delay:3s,1.5s
+    }
+
+
+    .snowflake:nth-child(11){
+        color: #02ECFF;
+        left:1%;animation-delay:0s,0s
+    }
+    .snowflake:nth-child(12){
+        color: #fff;
+        left:10%;animation-delay:1s,1s
+    }
+    .snowflake:nth-child(13){
+        color: #02ECFF;
+        left:20%;animation-delay:6s,.5s
+    }
+    .snowflake:nth-child(14){
+        color: #fff;
+        left:30%;animation-delay:4s,2s
+    }
+    .snowflake:nth-child(15){
+        color: #02ECFF;
+        left:40%;animation-delay:2s,2s
+    }
+    .snowflake:nth-child(16){
+        color: #fff;
+        left:50%;animation-delay:8s,3s
+    }
+    .snowflake:nth-child(17){
+        color: #02ECFF;
+        left:60%;animation-delay:6s,2s
+    }
+    .snowflake:nth-child(18){
+        color: #02ECFF;
+        left:70%;animation-delay:2.5s,1s
+    }
+    .snowflake:nth-child(19){
+        color: #02ECFF;
+        left:80%;animation-delay:1s,0s}
+    .snowflake:nth-child(20){
+        color: #fff;
+        left:90%;animation-delay:3s,1.5s
+    }
+
+
+
+/* //////////////end/////////////////////// */
 
 
 
