@@ -7,11 +7,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* ::selection {
-    color: #02ECFF;
-    background: #02ECFF;
-  } */
-
 header {
     width: 100%;
     height: 8vh;
@@ -1423,11 +1418,6 @@ main>section:nth-child(6)>section:nth-child(2)>div:hover>div:nth-child(4) {
 }
 
 
-
-
-
-
-
 /* //////////////////////////section 07/////////////////////////////////////////////////////////////////////////// */
 
 /* main section:nth-child(7) {
@@ -1943,8 +1933,11 @@ main>section:nth-child(9)>section:nth-child(2)>address:nth-child(1)>div:nth-chil
     justify-content: center;
 
 }
+main>section:nth-child(9)>section:nth-child(2)>address>div:nth-child(4)>div>a{
+    text-decoration: none;
+}
 
-main>section:nth-child(9)>section:nth-child(2)>address>div:nth-child(4)>div>i {
+main>section:nth-child(9)>section:nth-child(2)>address>div:nth-child(4)>div>a>i {
     width: 40px;
     height: 40px;
     font-size: 20px;
@@ -1957,10 +1950,11 @@ main>section:nth-child(9)>section:nth-child(2)>address>div:nth-child(4)>div>i {
     justify-content: center;
     margin: 0 10px;
     transition: 2s;
+   
 
 }
 
-main>section:nth-child(9)>section:nth-child(2)>address>div:nth-child(4)>div>i:hover {
+main>section:nth-child(9)>section:nth-child(2)>address>div:nth-child(4)>div>a>i:hover {
     text-shadow: 0 0 0.125em #02ECFF, 0 0 0.45em #02ECFF;
     box-shadow: inset 0 0 0.5em 0 #02ECFF, 0 0 0.5em 0 #02ECFF;
     transform: translateY(-10px);
@@ -2323,6 +2317,11 @@ main>section:nth-child(8)>svg:nth-child(3),main>section:nth-child(9)>svg:nth-chi
         padding-bottom: 1000px;
         width: 100%;
 
+    }
+    main>section:nth-child(9)>section:nth-child(2)>address>div:nth-child(4)>div>a>i {
+        width: 35px;
+        height: 35px;
+       
     }
 
 
@@ -2730,6 +2729,19 @@ main>section:nth-child(8)>svg:nth-child(3),main>section:nth-child(9)>svg:nth-chi
         right: 78px;
     }
 
+    main>section:nth-child(9)>section:nth-child(2)>address:nth-child(1)>div:nth-child(4)>div {
+         
+        bottom: 60px;
+      
+       
+    }
+
+    main>section:nth-child(9)>section:nth-child(2)>address>div:nth-child(4)>div>a>i {
+        width: 30px;
+        height: 30px;
+       
+    }
+
     /* ///////galery section///////////// */
 
     main>section:nth-child(8) {
@@ -2744,6 +2756,16 @@ main>section:nth-child(8)>svg:nth-child(3),main>section:nth-child(9)>svg:nth-chi
         gap: 4px;
     }
 
+    /* //////footer///////////// */
+    footer>h1 {
+        
+        margin: 0 6%;
+       
+    }
+
+    footer>nav:nth-child(2) {
+        margin-left: 1%;
+    }
 
 }
 
@@ -3166,7 +3188,7 @@ main>section:nth-child(8)>svg:nth-child(3),main>section:nth-child(9)>svg:nth-chi
         right: 12%;
     }
 
-    main>section:nth-child(9)>section:nth-child(2)>address>div:nth-child(4)>div>i {
+    main>section:nth-child(9)>section:nth-child(2)>address>div:nth-child(4)>div>a>i {
         width: 30px;
         height: 30px;
         font-size: 17px;
@@ -3220,7 +3242,10 @@ main>section:nth-child(8)>svg:nth-child(3),main>section:nth-child(9)>svg:nth-chi
 
 
     /* /////////homepage//////////// */
-
+    .snowflake {
+        font-size: 12px;
+    \
+    }
 
     /* //////////////////////////////////////////////////// */
     main>section:nth-child(2)>svg:nth-child(3), main>section:nth-child(3)>svg:nth-child(3), main>section:nth-child(4)>svg:nth-child(3), main>section:nth-child(5)>svg:nth-child(4), main>section:nth-child(6)>svg:nth-child(3), main>section:nth-child(7)>svg:nth-child(3), main>section:nth-child(8)>svg:nth-child(3), main>section:nth-child(9)>svg:nth-child(3) {
@@ -3858,10 +3883,11 @@ main>section:nth-child(8)>svg:nth-child(3),main>section:nth-child(9)>svg:nth-chi
 
     }
 
-    main>section:nth-child(9)>section:nth-child(2)>address>div:nth-child(4)>div>i {
-        width: 40px;
-        height: 40px;
-        font-size: 14px;
+    main>section:nth-child(9)>section:nth-child(2)>address>div:nth-child(4)>div>a>i {
+        width: 25px;
+        height: 25px;
+        font-size: 20px;
+        margin: 0 5px;
 
     }
 
