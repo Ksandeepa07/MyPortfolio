@@ -3404,6 +3404,14 @@ footer>section:nth-child(5)>p {
         display: inline-block;
     }
 
+    main>section:nth-child(1)>section:nth-child(1)>div>div:nth-child(6):hover{
+        transform: translateY(-10px);
+        text-shadow: 0 0 0.125rem #02ECFF, 0 0 0.45rem #02ECFF;
+        box-shadow: inset 0 0 0.5rem 0 #02ECFF, 0 0 0.5rem 0 #02ECFF;
+    }
+
+    
+
     main>section:nth-child(1)>aside:nth-child(2) {
         display: block;
         width: 100%;
@@ -3449,6 +3457,9 @@ footer>section:nth-child(5)>p {
         transition: transform 2s;
         z-index: 1;
     }
+
+   
+     
 
     main>section:nth-child(1)>aside:nth-child(3) {
         height: 0;
