@@ -27,7 +27,7 @@ Web POS (Point of Sale) is a web-based application that allows businesses to man
 
 Sitemap Url     - https://www.gloomaps.com/ETXTmb4TwN
 
-Wireframe url   - 
+Wireframe url   - https://www.figma.com/file/JbkfOhSg5zHVbOYrceSYrd/Pos-System-Wireframe?type=design&node-id=0%3A1&mode=design&t=j3rGqsHeaPcyG7xK-1
 
 Mockup url      - https://www.figma.com/file/g3bFN7Hzac2gm1Ej9k9G6v/Pos-System-Normal?type=design&node-id=1%3A122&mode=design&t=uN0xNXb1ccDAchwH-1
 
