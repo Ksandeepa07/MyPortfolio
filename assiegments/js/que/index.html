@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Js </title>
+
+  <style>
+    body>section:nth-child(1) {
+      width: max-content;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto;
+      height: max-content;
+
+    }
+
+    section:nth-child(1)>div:nth-child(1) {
+      width: 200px;
+      height: 100px;
+      border: 1px solid black;
+    }
+
+    section:nth-child(1)>section:nth-child(2) {
+      display: flex;
+    }
+
+    section:nth-child(1)>section:nth-child(2)>div {
+      width: 200px;
+      height: 100px;
+      border: 1px solid black;
+
+    }
+
+    section:nth-child(1)>section:nth-child(2)>div:nth-child(1) {
+      margin-left: 200px;
+    }
+
+    section:nth-child(1)>div:nth-child(3) {
+      width: 200px;
+      height: 100px;
+      border: 1px solid black;
+      margin-left: 1000px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+
+
+  <section>
+    <div id="div1"></div>
+    <section>
+      <div id="div2"></div>
+      <div id="div3"></div>
+      <div id="div4"></div>
+      <div id="div5"></div>
+    </section>
+
+    <div id="6"></div>
+  </section>
+
+
+  <script>
+
+    // let names=["kaveen","isuru"];
+
+    // for(let i in names){
+    //   console.log(i);
+    // }
+
+    let color = ["red", "green", "yellow", "blue", "purple", "black"];
+
+
+    let divs = document.querySelectorAll("div");
+
+    for (let i in color) {
+      divs[i].style.background = color[i];
+    }
+
+
+    setInterval(function () {
+      for (let i in color) {
+      divs[i].style.background = color[i];
+    }
+
+      var last = color.pop();
+      color.unshift(last);
+
+    },200);
+
+
+ 
+
+  </script>
+
+</body>
+
+</html>

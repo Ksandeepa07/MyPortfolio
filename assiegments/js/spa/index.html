@@ -965,6 +965,7 @@
         //  other
 
         customerClick.addEventListener("click", function () {
+            sessionStorage.setItem('lastActiveSection', 'customer');
             customer.style.display = 'inline';
             placeOrder.style.display = 'none';
             orderDetail.style.display = 'none';
@@ -974,6 +975,7 @@
         })
 
         itemClick.addEventListener("click", function () {
+            sessionStorage.setItem('lastActiveSection', 'item');
             customer.style.display = 'none';
             placeOrder.style.display = 'none';
             orderDetail.style.display = 'none';
@@ -983,6 +985,7 @@
         })
 
         placeOrderClick.addEventListener("click", function () {
+            sessionStorage.setItem('lastActiveSection', 'placeOrder');
             customer.style.display = 'none';
             placeOrder.style.display = 'inline';
             orderDetail.style.display = 'none';
@@ -992,6 +995,7 @@
         })
 
         ordeDetailclick.addEventListener("click", function () {
+            sessionStorage.setItem('lastActiveSection', 'OrderDetail');
             customer.style.display = 'none';
             placeOrder.style.display = 'none';
             orderDetail.style.display = 'inline';
@@ -1010,6 +1014,26 @@
         })
 
        
+        document.addEventListener('DOMContentLoaded', function () {
+        const lastActiveSection = sessionStorage.getItem('lastActiveSection');
+        const sections = document.querySelectorAll('section');
+        
+
+        if (lastActiveSection) {
+            sections.forEach(section => {
+
+                section.style.display = 'none';
+
+            });
+            const activeSection = document.querySelector(`#${lastActiveSection}`);
+            if (activeSection) {
+                activeSection.style.display = 'inline';
+                header.style.display = 'inline';
+            }else {
+               
+            }
+        }
+    });
 
         
 
