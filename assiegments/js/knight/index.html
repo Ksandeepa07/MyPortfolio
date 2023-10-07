@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>knight</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <script src="../../../code.jquery.com_jquery-3.7.1.min.js"></script>
+</head>
+
+<body class="bg-black">
+
+
+  <div class="container text-center mt-5 ">
+    <div class="row">
+      <div class="col ">
+        <h1 class="text-white ">Knight Rider</h1>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="container ">
+    <div class="row ">
+      <div class="col-5 text-end">
+        <h1 class="text-danger ">Speed <span id="speed" class="text-primary">50</span></h1>
+      </div>
+
+      <div class="col-2 text-center ">
+        <h1 class="text-danger ">|</h1>
+      </div>
+
+      <div class="col-5 ">
+        <h1 class="text-danger ">Waititng Time <span id="wTime" class="text-primary">50</span></h1>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- divs dection -->
+
+  <section id="#divSection" class="container text-center mt-5 ">
+    <section class="row ">
+
+      <div class="col border border-1 border-black divs   " style="height: 100px;">
+
+      </div>
+
+      <div class="col border border-1 border-black  divs  ">
+
+      </div>
+
+      <div class="col border border-1 border-black divs ">
+
+      </div>
+
+      <div class="col border border-1 border-black  divs ">
+
+      </div>
+
+      <div class="col border border-1 border-black  divs  ">
+
+      </div>
+
+      <div class="col border border-1 border-black  divs ">
+
+      </div>
+
+    </section>
+
+  </section>
+
+  <!-- under -->
+  <div class="container text-center mt-5">
+    <div class="row">
+      <div class="col text-end">
+
+        <button id="start" type="button" class="btn btn-primary mx-4">Start</button>
+        <button id="stop" type="button" class="btn btn-danger ">Stop</button>
+
+
+
+      </div>
+
+      <div class="col">
+
+       
+        <input id="ranger" type="range" class="form-range bg-white px-4 rounded-3" id="range"  min="20" max="100" value="50" step="1" style="height: 100%">
+
+      </div>
+    </div>
+   
+  </div>
+
+  <audio class="sound" src="knightMusic.mp3" loop type="audio/mp3"> </audio>
+
+  
+ 
+
+
+  <script>
+
+
+    let startBtn = $("#start");
+    let stopBtn = $("#stop");
+    let divs = $(".divs");
+    let ranger=$("#ranger");
+    let speedH1=$("#speed");
+    let wTimeH1=$("#wTime");
+    let sound=$(".sound");
+    // let color = ["#fc0000", "#ffeaea", "#feb1b1", "#ff7878", "#ff3f3f", "#ff0606"];
+    // let leftColor = ["#ff0606", "#ff3f3f", "#ff7878", "#feb1b1", "#ffeaea", "#fc0000"];
+    // let countRight = -1;
+    // let countLeft = -1;
+    // let divide = 6;
+    let s;
+    let d;
+    let colurs = ["#c00", "#ff0606", "3ff3f3f", "#ff7878", "#feb1b1", "#feb1b1"];
+    let speed = 50;
+    let wTime=50;
+    let count = 0;
+    currenIndex = 0;
+    WCount = 0;
+    let newColursRight = [];
+    let leftCount = 0;
+    let timer;
+
+
+    for (let i = 0; i < colurs.length; i++) {
+      divs[i].style.background = "white";
+    }
+
+    startBtn.click(function () {
+      startRight();
+      sound[0].play();
+    })
+
+
+    function startRight() {
+      
+      d = setInterval(function () {
+
+        if (count == 24) {
+          leftCount = 0;
+          count = 0;
+          newColursRight = [];
+          WCount++;
+          console.log("wcount", WCount);
+          console.log("24 count", count);
+          console.log(newColursRight);
+
+          if (WCount == 2) {
+
+            console.log("24 after count", count);
+            WCount = 0;
+            clearInterval(d);
+            setTimeout(function () {
+              startRight();
+            }, wTime)
+          }
+
+        }
+
+        else if (count >= 18) {
+          newColursRight.shift();
+          newColursRight.push("white");
+          count++;
+
+        }
+
+        else if (count >= 12) {
+
+          newColursRight.shift();
+          newColursRight.push(colurs[leftCount++]);
+          count++;
+
+        }
+
+        else if (count >= 6) {
+          newColursRight.pop();
+          newColursRight.unshift("white");
+          count++;
+        }
+
+
+        else {
+          newColursRight.unshift(colurs[count]);
+          count++;
+        }
+
+        for (let i = 0; i < newColursRight.length; i++) {
+          divs[i].style.background = newColursRight[i];
+
+        }
+      }, speed)
+
+    }
+
+
+    stopBtn.click(function () {
+      clearInterval(d);
+      sound[0].pause();
+    })
+
+    ranger.click(function(){
+      let rangeValue=ranger.val();
+      console.log(rangeValue);
+
+      speed=rangeValue;
+      speedH1.text(rangeValue);
+
+      wTime=rangeValue*20;
+      wTimeH1.text(wTime);
+
+    })
+
+
+
+  </script>
+
+</body>
+
+</html>
