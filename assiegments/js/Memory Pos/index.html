@@ -12,6 +12,8 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 
+        <script src="../../../code.jquery.com_jquery-3.7.1.min.js"></script>
+
     <title>Single Page Design</title>
 </head>
 
@@ -101,9 +103,9 @@
 
                                 </ul>
                                 <form class="d-flex" role="search">
-                                    <input class="form-control me-2" type="search" placeholder="Search"
+                                    <input id="searchTxt" class="form-control me-2" type="search" placeholder="Search"
                                         aria-label="Search">
-                                    <button class="btn btn-outline-danger " type="submit">Search</button>
+                                    <button id="searcBtn" class="btn btn-outline-danger " type="button">Search</button>
                                 </form>
 
 
@@ -155,13 +157,15 @@
                                             placeholder="Customer Email">
                                     </div>
 
-                                    <button id="#customerSaveBtn" type="button"
+                                    <button id="customerSaveBtn" type="button"
                                         class="btn btn-success  mt-5 me-1 mt-sm-5 me-sm-4  ">save</button>
 
-                                    <button id="upBtn" type="button"
+                                    <button id="CustomerUpdateBtn" type="button"
                                         class="btn btn-danger   mt-5 me-1 mt-sm-5 me-sm-4 ">update</button>
-                                    <button type="submit"
+
+                                    <button id="customerDeleteBtn" type="button"
                                         class="btn btn-primary  mt-5 me-1 mt-sm-5 me-sm-4 ">Delete</button>
+
                                     <a href="index.html" class="btn btn-warning mt-5 me-1 mt-sm-5 me-sm-4 ">Back</a>
 
                                 </form>
@@ -189,16 +193,7 @@
                         </tr>
                     </thead>
                     <tbody id="cTBody">
-                        <tr>
-                            <td>kd</td>
-                            <td>kd</td>
-                            <td>kd</td>
-                            <td>kd</td>
-                            <td>kd</td>
-
-                        </tr>
-
-
+                       
                     </tbody>
 
                 </table>
@@ -229,24 +224,26 @@
                                     </div>
 
                                     <div class="form-group mt-4">
-                                        <input type="text" class="form-control" id="address" placeholder="Item type">
+                                        <input type="text" class="form-control" id="type" placeholder="Item type">
                                     </div>
 
                                     <div class="form-group mt-4">
-                                        <input type="number" class="form-control" id="contact"
+                                        <input type="number" class="form-control" id="unitPrice"
                                             placeholder="Item Unit Price">
                                     </div>
 
                                     <div class="form-group mt-4">
-                                        <input type="number" class="form-control" id="email" placeholder="ItemQuantity">
+                                        <input type="number" class="form-control" id="qty" placeholder="ItemQuantity">
                                     </div>
 
-                                    <button type="submit"
+                                    <button id="itemSaveBtn" type="button"
                                         class="btn btn-success  mt-5 me-1 mt-sm-5 me-sm-4  ">save</button>
-                                    <button type="submit"
+                                    <button id="itemUpdateBtn" type="button"
                                         class="btn btn-danger   mt-5 me-1 mt-sm-5 me-sm-4 ">update</button>
-                                    <button type="submit"
+                                    <button id="itemDeletBtn" type="button"
+                                    
                                         class="btn btn-primary  mt-5 me-1 mt-sm-5 me-sm-4 ">Delete</button>
+
                                     <a href="index.html" class="btn btn-warning mt-5 me-1 mt-sm-5 me-sm-4 ">Back</a>
 
 
@@ -274,96 +271,8 @@
 
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>I001</td>
-                        <td>Noodles</td>
-                        <td>food</td>
-                        <td>100</td>
-                        <td>10</td>
-
-                    </tr>
-                    <tr>
-                        <td>I001</td>
-                        <td>Noodles</td>
-                        <td>food</td>
-                        <td>100</td>
-                        <td>10</td>
-
-                    </tr>
-                    <tr>
-                        <td>I001</td>
-                        <td>Noodles</td>
-                        <td>food</td>
-                        <td>100</td>
-                        <td>10</td>
-
-                    </tr>
-                    <tr>
-                        <td>I001</td>
-                        <td>Noodles</td>
-                        <td>food</td>
-                        <td>100</td>
-                        <td>10</td>
-
-                    </tr>
-                    <tr>
-                        <td>I001</td>
-                        <td>Noodles</td>
-                        <td>food</td>
-                        <td>100</td>
-                        <td>10</td>
-
-                    </tr>
-                    <tr>
-                        <td>I001</td>
-                        <td>Noodles</td>
-                        <td>food</td>
-                        <td>100</td>
-                        <td>10</td>
-
-                    </tr>
-                    <tr>
-                        <td>I001</td>
-                        <td>Noodles</td>
-                        <td>food</td>
-                        <td>100</td>
-                        <td>10</td>
-
-                    </tr>
-                    <tr>
-                        <td>I001</td>
-                        <td>Noodles</td>
-                        <td>food</td>
-                        <td>100</td>
-                        <td>10</td>
-
-                    </tr>
-                    <tr>
-                        <td>I001</td>
-                        <td>Noodles</td>
-                        <td>food</td>
-                        <td>100</td>
-                        <td>10</td>
-
-                    </tr>
-                    <tr>
-                        <td>I001</td>
-                        <td>Noodles</td>
-                        <td>food</td>
-                        <td>100</td>
-                        <td>10</td>
-
-                    </tr>
-                    <tr>
-                        <td>I001</td>
-                        <td>Noodles</td>
-                        <td>food</td>
-                        <td>100</td>
-                        <td>10</td>
-
-                    </tr>
-
+                <tbody id="iTbody">
+                   
                 </tbody>
             </table>
         </div>
@@ -389,7 +298,7 @@
                             <form class="row g-3">
                                 <div class="col-12 col-sm-6">
                                     <label for="orderId" class="form-label">Order Id :</label>
-                                    <input type="email" class="form-control" id="orderId">
+                                    <input disabled type="email" class="form-control" id="orderId">
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <label for="date" class="form-label">Date :</label>
@@ -401,16 +310,14 @@
                         <div class="container-fluid mt-4  ">
                             <form class="row g-3">
                                 <div class="col-12 col-sm-6">
-                                    <label for="inputState" class="form-label">Customer Id :</label>
-                                    <select id="inputState" class="form-select">
-                                        <option selected>C001</option>
-                                        <option selected>C002</option>
-                                        <option selected>C003</option>
+                                    <label for="customerIdCmb" class="form-label">Customer Id :</label>
+                                    <select id="customerIdCmb" class="form-select">
+                                       
                                     </select>
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <label for="inputPassword4" class="form-label">Customer Name :</label>
-                                    <input type="text" class="form-control" id="name">
+                                    <input disabled  type="text" class="form-control" id="cmbCustomerName">
                                 </div>
                             </form>
                         </div>
@@ -419,11 +326,11 @@
                             <form class="row g-3">
                                 <div class="col-12 col-sm-6">
                                     <label for="contact" class="form-label">Customer Contact :</label>
-                                    <input type="text" class="form-control" id="contact">
+                                    <input disabled type="text" class="form-control" id="cmbCustomerContact">
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <label for="email" class="form-label">Customer Email :</label>
-                                    <input type="text" class="form-control" id="">
+                                    <input disabled type="text" class="form-control" id="cmbCustomerEmail">
                                 </div>
                             </form>
                         </div>
@@ -445,16 +352,14 @@
                         <div class="container-fluid mt-5 ">
                             <form class="row g-3">
                                 <div class="col-12 col-sm-6">
-                                    <label for="inputState" class="form-label">Item Id :</label>
-                                    <select id="inputState" class="form-select">
-                                        <option selected>I001</option>
-                                        <option selected>I002</option>
-                                        <option selected>I003</option>
+                                    <label for="itemIdCmb" class="form-label">Item Id :</label>
+                                    <select id="itemIdCmb" class="form-select">
+                                      
                                     </select>
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <label for="name" class="form-label">Item Name :</label>
-                                    <input type="text" class="form-control" id="name">
+                                    <input disabled type="text" class="form-control" id="itemNameCmb">
                                 </div>
                             </form>
                         </div>
@@ -463,11 +368,11 @@
                             <form class="row g-3">
                                 <div class="col-12 col-sm-6">
                                     <label for="price" class="form-label">Item Unit Price :</label>
-                                    <input type="number" class="form-control" id="price">
+                                    <input disabled type="number" class="form-control" id="itemPriceCmb">
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <label for="type" class="form-label">Item Type :</label>
-                                    <input type="text" class="form-control" id="type">
+                                    <input disabled type="text" class="form-control" id="itemTypeCmb">
                                 </div>
                             </form>
                         </div>
@@ -477,7 +382,10 @@
 
                                 <div class="col-12 col-sm-12 ">
                                     <label for="qty" class="form-label">Item quantity :</label>
-                                    <input type="number" class="form-control" id="qty">
+                                    <input  type="number" class="form-control" id="itemQtyCmb">
+                                    <label id="qtyWarningLbl" class="form-check-label fw-bolder   "  for="qty" style="font-size: 14px; color:white">
+                                       Should Include a Quantity!
+                                      </label>
                                 </div>
 
 
@@ -493,7 +401,7 @@
                             <div class="row">
                                 <div class="col">
                                     <div class="col-12 col-sm-12 ">
-                                        <h1 class="text-danger mt-1 ">Total : <span class="text-black ">3000.00</span>
+                                        <h1 class="text-danger mt-1 ">Total : <span id="totalSpan" class="text-black ">0</span>
                                         </h1>
 
                                     </div>
@@ -516,9 +424,15 @@
 
                         <div class="container-fluid mt-4  ">
                             <form class="row g-3">
+
+                                <div class="col-12 col-sm-12">
+                                    <label for="balance" class="form-label">sub total  :</label>
+                                    <input disabled type="number" class="form-control" id="subTotal">
+                                </div>
+
                                 <div class="col-12 col-sm-12">
                                     <label for="balance" class="form-label">Balance :</label>
-                                    <input type="number" class="form-control" id="balance">
+                                    <input disabled type="number" class="form-control" id="balance">
                                 </div>
 
                             </form>
@@ -529,8 +443,8 @@
                         <div class="container-fluid mt-4  ">
                             <form class="row g-3">
                                 <div class="col-12 col-sm-12">
-                                    <a href="" class="btn btn-danger "> Add to cart</a>
-                                    <a href="" class="btn btn-danger "> Place Order</a>
+                                    <a id="addToCart" class="btn btn-danger "> Add to cart</a>
+                                    <a id="placeOrderBtn" class="btn btn-danger "> Place Order</a>
                                 </div>
 
                             </form>
@@ -541,7 +455,7 @@
             </div>
 
 
-            <div class="table-responsive mt-5 " style="height: 400px">
+            <div class="table-responsive mt-5 " style="height: 320px">
                 <table class="table table-bordered table-hover table-striped ">
                     <thead>
                         <tr>
@@ -552,84 +466,8 @@
                             <th class="bg-danger text-white">Total </th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>I001</td>
-                            <td>Noodles</td>
-                            <td>100</td>
-                            <td>10</td>
-                            <td>1000</td>
-                        </tr>
-                        <tr>
-                            <td>I001</td>
-                            <td>Noodles</td>
-                            <td>100</td>
-                            <td>10</td>
-                            <td>1000</td>
-                        </tr>
-                        <tr>
-                            <td>I001</td>
-                            <td>Noodles</td>
-                            <td>100</td>
-                            <td>10</td>
-                            <td>1000</td>
-                        </tr>
-                        <tr>
-                            <td>I001</td>
-                            <td>Noodles</td>
-                            <td>100</td>
-                            <td>10</td>
-                            <td>1000</td>
-                        </tr>
-                        <tr>
-                            <td>I001</td>
-                            <td>Noodles</td>
-                            <td>100</td>
-                            <td>10</td>
-                            <td>1000</td>
-                        </tr>
-                        <tr>
-                            <td>I001</td>
-                            <td>Noodles</td>
-                            <td>100</td>
-                            <td>10</td>
-                            <td>1000</td>
-                        </tr>
-                        <tr>
-                            <td>I001</td>
-                            <td>Noodles</td>
-                            <td>100</td>
-                            <td>10</td>
-                            <td>1000</td>
-                        </tr>
-                        <tr>
-                            <td>I001</td>
-                            <td>Noodles</td>
-                            <td>100</td>
-                            <td>10</td>
-                            <td>1000</td>
-                        </tr>
-                        <tr>
-                            <td>I001</td>
-                            <td>Noodles</td>
-                            <td>100</td>
-                            <td>10</td>
-                            <td>1000</td>
-                        </tr>
-                        <tr>
-                            <td>I001</td>
-                            <td>Noodles</td>
-                            <td>100</td>
-                            <td>10</td>
-                            <td>1000</td>
-                        </tr>
-                        <tr>
-                            <td>I001</td>
-                            <td>Noodles</td>
-                            <td>100</td>
-                            <td>10</td>
-                            <td>1000</td>
-                        </tr>
+                    <tbody id="placeOrderTbody">
+                       
 
                     </tbody>
 
@@ -844,214 +682,27 @@
     </section>
 
 
-    <script src="code.jquery.com_jquery-3.7.1.min.js"></script>
-
-
-    <script>
-        var customer = document.querySelector("#customer");
-        customer.style.display = 'none';
-
-        var item = document.querySelector("#item");
-        item.style.display = 'none';
-
-        var placeOrder = document.querySelector("#placeOrder");
-        placeOrder.style.display = 'none';
-
-        var orderDetail = document.querySelector("#OrderDetail");
-        orderDetail.style.display = 'none';
-
-        var header = document.querySelector("#header");
-        header.style.display = 'none';
-
-        var dashboard = document.querySelector("#dashboard");
-
-        var customerClick = document.querySelector("#customerClick");
-        var itemClick = document.querySelector("#itemClick");
-        var placeOrderClick = document.querySelector("#placeOrderClick");
-        var ordeDetailclick = document.querySelector("#OrderDetailClick");
-
-
-
-        document.querySelector("#manageCustomerClick").addEventListener("click", function () {
-            dashboard.style.display = 'none';
-            header.style.display = 'inline';
-            customer.style.display = 'inline';
-        });
-
-        document.querySelector("#manageItemClick").addEventListener("click", function () {
-            dashboard.style.display = 'none';
-            header.style.display = 'inline';
-            item.style.display = 'inline';
-        });
-
-        document.querySelector("#manageOrdersClick").addEventListener("click", function () {
-            dashboard.style.display = 'none';
-            header.style.display = 'inline';
-            placeOrder.style.display = 'inline';
-        });
-
-
-        //  other
-
-        customerClick.addEventListener("click", function () {
-            // sessionStorage.setItem('lastActiveSection', 'customer');
-            customer.style.display = 'inline';
-            placeOrder.style.display = 'none';
-            orderDetail.style.display = 'none';
-            header.style.display = 'inline';
-            item.style.display = 'none';
-
-        })
-
-        itemClick.addEventListener("click", function () {
-            // sessionStorage.setItem('lastActiveSection', 'item');
-            customer.style.display = 'none';
-            placeOrder.style.display = 'none';
-            orderDetail.style.display = 'none';
-            header.style.display = 'inline';
-            item.style.display = 'inline';
-
-        })
-
-        placeOrderClick.addEventListener("click", function () {
-            // sessionStorage.setItem('lastActiveSection', 'placeOrder');
-            customer.style.display = 'none';
-            placeOrder.style.display = 'inline';
-            orderDetail.style.display = 'none';
-            header.style.display = 'inline';
-            item.style.display = 'none';
-
-        })
-
-        ordeDetailclick.addEventListener("click", function () {
-            // sessionStorage.setItem('lastActiveSection', 'OrderDetail');
-            customer.style.display = 'none';
-            placeOrder.style.display = 'none';
-            orderDetail.style.display = 'inline';
-            header.style.display = 'inline';
-            item.style.display = 'none';
-
-        })
-
-        document.querySelector("#posSystemClcik").addEventListener("click", function () {
-            customer.style.display = 'none';
-            placeOrder.style.display = 'none';
-            orderDetail.style.display = 'none';
-            header.style.display = 'none';
-            item.style.display = 'none';
-            dashboard.style.display = 'inline';
-        })
-
-
-        // document.addEventListener('DOMContentLoaded', function () {
-        //     const lastActiveSection = sessionStorage.getItem('lastActiveSection');
-        //     const sections = document.querySelectorAll('section');
-
-
-        //     if (lastActiveSection) {
-        //         sections.forEach(section => {
-
-        //             section.style.display = 'none';
-
-        //         });
-        //         const activeSection = document.querySelector(`#${lastActiveSection}`);
-        //         if (activeSection) {
-        //             activeSection.style.display = 'block';
-        //             header.style.display = 'inline';
-        //         } else {
-
-        //         }
-        //     }
-        // });
-
-
-
-        // customer save to array
-
-
-        let customerSave = document.getElementById("#customerSaveBtn");
-        let custIdField = $("#cId");
-        let custNameField = $("#cName");
-        let custAddressField = $("#cAddress");
-        let custContactField = $("#cContact");
-        let custEmailField = $("#cEmail");
-
-        var customers = [];
-
-        customerSave.addEventListener("click", function () {
-
-            var customer = {
-                custId: custIdField.val(),
-                custName: custNameField.val(),
-                custAddress: custAddressField.val(),
-                custContact: custContactField.val(),
-                custEmail: custEmailField.val()
-            }
-
-            customers.push(customer);
-            let tbody = $("#cTBody");
-        
-
-            for (let i = 0; i < customers.length; i++) {
-
-
-                let trow = `<tr>
-                            <td>${customers[i].custId}</td>
-                            <td>${customers[i].custName}</td>
-                            <td>${customers[i].custAddress}</td>
-                            <td>${customers[i].custContact}</td>
-                            <td>${customers[i].custEmail}</td>
-                        </tr>`;
-
-
-                tbody.append(trow);
-
-            }
-
-        })
-
-        bindEvents();
-
-        function bindEvents() {
-            $("#cTBody>tr").click(function () {
-
-                let id = $(this).children(":nth-child(1)").text();
-                let name = $(this).children(":nth-child(2)").text();
-                let adress = $(this).children(":nth-child(3)").text();
-                let contact = $(this).children(":nth-child(4)").text();
-                let email = $(this).children(":nth-child(5)").text();
-
-
-                setTextToFileds(id,name,adress,contact,email);
-
-            })
-        }
-
-
-        function setTextToFileds(id,name,address,contact,email){
-            $("#cId").val(id);
-            $("#cName").val(name);
-            $("#cAddress").val(address);
-            $("#cContact").val(contact);
-            $("#cEmail").val(email);
-
-
-
-        }
-
-        deleteFromTable();
-
-        function deleteFromTable(){
-            $("#cTBody>tr").dblclick(function(){
-            $(this).children().remove();
-
-        })
-        }
-        
-
-
-
-    </script>
+     
+
+     
+    <script src="controller/DashBoardController.js"></script>
+    
+    <script src="controller/CustomerController.js"></script>
+    <script src="model/customer.js"></script>
+
+    <script src="controller/ItemController.js"></script>
+    <script src="model/item.js"></script>
+
+     
+    
+    <script src="db/db.js"></script>
+    <script src="controller/PlaceOrderController.js"></script>
+    <script src="controller/validations/customerValidation.js"></script>
+    <script src="model/order.js"></script>
+
+    <script src="model/orderDetails.js"></script>
+
+   
 
 
 
