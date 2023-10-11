@@ -116,7 +116,6 @@ function setPlaceOrderDetails() {
     $("#totalSpan").text(newTotal);
     $("#subTotal").val(newTotal);
 
-
 }
 
 function getCartData() {
@@ -135,19 +134,13 @@ function getCartData() {
 }
 
 
-
 $("#discount").on("keydown keyup", function (e) {
     $("#subTotal").val(newTotal - (newTotal * $("#discount").val() / 100));
 
 })
 
 $("#payment").on("keydown keyup",function(e){
-
-    if( $("#balance").val()<0){
-        $("#balance").val($(parseFloat($("#payment").val())- parseFloat(total)));
-    }else{
-        $("#balance").val( (parseFloat($("#payment").val())- total));
-    }
+        $("#balance").val(parseFloat($("#payment").val())-parseFloat(newTotal));
     
 })
 
@@ -161,41 +154,42 @@ $("#placeOrderBtn").click(function () {
     $("#itemQtyCmb").val().length===0 ){
         alert("please fill all empty fields !")
     }else{
-        /* set data to order details */
-
-    for (let i = 0; i < addToCartArray.length; i++) {
-        newOrderDetails = {
-            orderId: $("#orderId").val(),
-            itemId: addToCartArray[i].cartItemId,
-            qty: addToCartArray[i].cartItemQty,
-            total: addToCartArray[i].cartItemTotal
+        if($("#balance").val()>=0){
+            for (let i = 0; i < addToCartArray.length; i++) {
+                newOrderDetails = {
+                    orderId: $("#orderId").val(),
+                    itemId: addToCartArray[i].cartItemId,
+                    qty: addToCartArray[i].cartItemQty,
+                    total: addToCartArray[i].cartItemTotal
+                }
+                newOrder.orderDetails.push(newOrderDetails);
+                console.log("order detail", newOrderDetails);
+        
+            }
+        
+            /* set data to order */
+        
+            newOrder = {
+                orderId: $("#orderId").val(),
+                custId: $("#customerIdCmb").val(),
+                orderDate: $("#date").val()
+            }
+            orderDB.push(newOrder);
+        
+            // console.log("order", order);
+            // console.log("befor", addToCartArray);
+            addToCartArray = [];
+            console.log("after", addToCartArray);
+            $("#placeOrderTbody").empty();
+        
+            $("#orderId").val(splitOrderId(orderDB[orderDB.length-1].orderId));
+            alert("order placed sucessfully !");
+        
+            }else{
+                alert("insufficent credit to place order!");
+            }
         }
-        newOrder.orderDetails.push(newOrderDetails);
-        console.log("order detail", newOrderDetails);
-
-    }
-
-    /* set data to order */
-
-    newOrder = {
-        orderId: $("#orderId").val(),
-        custId: $("#customerIdCmb").val(),
-        orderDate: $("#date").val()
-    }
-    orderDB.push(newOrder);
-
-    // console.log("order", order);
-    // console.log("befor", addToCartArray);
-    addToCartArray = [];
-    console.log("after", addToCartArray);
-    $("#placeOrderTbody").empty();
-
-    $("#orderId").val(splitOrderId(orderDB[orderDB.length-1].orderId));
-    alert("order placed sucessfully !");
-
-
-
-    }
+        /* set data to order details */
 
      
 

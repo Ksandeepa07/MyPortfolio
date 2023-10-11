@@ -1,7 +1,11 @@
 $("#itemSaveBtn").click(function () {
     let reult=saveItem();
     if(reult){
-        alert("Item Saved sucessfully!");
+       Swal.fire(
+        'Item Saved Sucessfully',
+        'Item has been Saved sucessfully..!',
+        'success'
+    )
         getAllItem();
         clearItemTextFields();
         ItemDataBindEvents();

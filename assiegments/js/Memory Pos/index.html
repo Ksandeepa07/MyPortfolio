@@ -426,7 +426,7 @@
                             <form class="row g-3">
 
                                 <div class="col-12 col-sm-12">
-                                    <label for="balance" class="form-label">sub total  :</label>
+                                    <label for="subTotal" class="form-label">sub total  :</label>
                                     <input disabled type="number" class="form-control" id="subTotal">
                                 </div>
 
@@ -518,7 +518,7 @@
                                     </div>
 
 
-                                    <button type="submit"
+                                    <button id="placeOUpBtn" type="button"
                                         class="btn btn-danger   mt-5 me-1 mt-sm-5 me-sm-4 ">update</button>
                                     <button type="submit"
                                         class="btn btn-primary  mt-5 me-1 mt-sm-5 me-sm-4 ">Delete</button>
@@ -549,140 +549,16 @@
 
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>O001</td>
-                            <td>I001</td>
-                            <td>Noodles</td>
-                            <td>200</td>
-                            <td>10</td>
-                            <td>2000</td>
-
-                        </tr>
-                        <tr>
-                            <td>O001</td>
-                            <td>I001</td>
-                            <td>Noodles</td>
-                            <td>200</td>
-                            <td>10</td>
-                            <td>2000</td>
-
-                        </tr>
-                        <tr>
-                            <td>O001</td>
-                            <td>I001</td>
-                            <td>Noodles</td>
-                            <td>200</td>
-                            <td>10</td>
-                            <td>2000</td>
-
-                        </tr>
-                        <tr>
-                            <td>O001</td>
-                            <td>I001</td>
-                            <td>Noodles</td>
-                            <td>200</td>
-                            <td>10</td>
-                            <td>2000</td>
-
-                        </tr>
-                        <tr>
-                            <td>O001</td>
-                            <td>I001</td>
-                            <td>Noodles</td>
-                            <td>200</td>
-                            <td>10</td>
-                            <td>2000</td>
-
-                        </tr>
-                        <tr>
-                            <td>O001</td>
-                            <td>I001</td>
-                            <td>Noodles</td>
-                            <td>200</td>
-                            <td>10</td>
-                            <td>2000</td>
-
-                        </tr>
-                        <tr>
-                            <td>O001</td>
-                            <td>I001</td>
-                            <td>Noodles</td>
-                            <td>200</td>
-                            <td>10</td>
-                            <td>2000</td>
-
-                        </tr>
-                        <tr>
-                            <td>O001</td>
-                            <td>I001</td>
-                            <td>Noodles</td>
-                            <td>200</td>
-                            <td>10</td>
-                            <td>2000</td>
-
-                        </tr>
-                        <tr>
-                            <td>O001</td>
-                            <td>I001</td>
-                            <td>Noodles</td>
-                            <td>200</td>
-                            <td>10</td>
-                            <td>2000</td>
-
-                        </tr>
-                        <tr>
-                            <td>O001</td>
-                            <td>I001</td>
-                            <td>Noodles</td>
-                            <td>200</td>
-                            <td>10</td>
-                            <td>2000</td>
-
-                        </tr>
-                        <tr>
-                            <td>O001</td>
-                            <td>I001</td>
-                            <td>Noodles</td>
-                            <td>200</td>
-                            <td>10</td>
-                            <td>2000</td>
-
-                        </tr>
-                        <tr>
-                            <td>O001</td>
-                            <td>I001</td>
-                            <td>Noodles</td>
-                            <td>200</td>
-                            <td>10</td>
-                            <td>2000</td>
-
-                        </tr>
-                        <tr>
-                            <td>O001</td>
-                            <td>I001</td>
-                            <td>Noodles</td>
-                            <td>200</td>
-                            <td>10</td>
-                            <td>2000</td>
-
-                        </tr>
-                        <tr>
-                            <td>O001</td>
-                            <td>I001</td>
-                            <td>Noodles</td>
-                            <td>200</td>
-                            <td>10</td>
-                            <td>2000</td>
-
-                        </tr>
+                    <tbody id="orderDetailsTbody">
+                       
                     </tbody>
                 </table>
             </div>
     </section>
 
 
-     
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
      
     <script src="controller/DashBoardController.js"></script>
@@ -701,6 +577,7 @@
     <script src="model/order.js"></script>
 
     <script src="model/orderDetails.js"></script>
+    <script src="controller/orderDetailsController.js"></script>
 
    
 
