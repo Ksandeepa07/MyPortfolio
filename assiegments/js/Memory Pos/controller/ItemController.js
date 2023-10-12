@@ -7,13 +7,13 @@ $("#itemSaveBtn").click(function () {
         'success'
     )
         getAllItem();
-        clearItemTextFields();
+        clearItemInputFields();
         ItemDataBindEvents();
         doubleCLickDeleteIetm();
         loadItemIds();
     }else{
         alert("Error! Try Again !");
-        clearItemTextFields();
+        clearItemInputFields();
 
     }
 
@@ -25,13 +25,13 @@ $("#itemUpdateBtn").click(function () {
    if(result){
     alert("Item Updated sucessfully!");
     getAllItem();
-    clearItemTextFields();
+    clearItemInputFields();
     ItemDataBindEvents();
     doubleCLickDeleteIetm();
 
    }else{
     alert("Error! Try Again !");
-    clearItemTextFields();
+    clearItemInputFields();
 }
 
 
@@ -44,11 +44,11 @@ $("#itemDeletBtn").click(function () {
         alert("Item Deleted sucessfully !");
         getAllItem();
         ItemDataBindEvents();
-        clearItemTextFields();
+        clearItemInputFields();
         doubleCLickDeleteIetm();
     }else{
         alert("Error! Try Again !");
-        clearItemTextFields();
+        clearItemInputFields();
     }
 
 
@@ -199,7 +199,7 @@ function doubleCLickDeleteIetm() {
                     console.log(itemDB);
                     itemDB.splice(i,1);
                     $(this).children().remove();
-                    clearItemTextFields();
+                    clearItemInputFields();
                     
                 }       
             }
@@ -209,12 +209,12 @@ function doubleCLickDeleteIetm() {
 }
 
 
-function clearItemTextFields(){
-    $("#id").val("");
-    $("#name").val("");
-    $("#type").val("");
-    $("#unitPrice").val("");
-    $("#qty").val("");
-}
+// function clearItemTextFields(){
+//     $("#id").val("");
+//     $("#name").val("");
+//     $("#type").val("");
+//     $("#unitPrice").val("");
+//     $("#qty").val("");
+// }
 
 

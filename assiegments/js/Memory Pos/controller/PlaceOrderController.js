@@ -1,6 +1,6 @@
 
 let addToCartArray = [];
-let newTotal;
+let newTotal=0;;
 let total;
 
 $("#orderId").val(splitOrderId(orderDB[orderDB.length-1]));
@@ -18,7 +18,6 @@ $("#customerIdCmb").click(function () {
     console.log($("#customerIdCmb").val());
 
     let customer = searchCustomer($("#customerIdCmb").val());
-    console.log(customer.name);
     $("#cmbCustomerName").val(customer.name);
     $("#cmbCustomerContact").val(customer.contact);
     $("#cmbCustomerEmail").val(customer.email);
@@ -62,8 +61,9 @@ $("#addToCart").click(function () {
         } else {
             let item=searchItem($("#itemIdCmb").val());
             console.log(item.qty);
-            if($("#itemQtyCmb").val()<=item.qty){
+            if($("#itemQtyCmb").val().trim()<=item.qty){
                 setPlaceOrderDetails();
+               
             }else{
                 alert("not sufficient qty !");
             }
@@ -111,10 +111,21 @@ function setPlaceOrderDetails() {
     addToCartArray.push(cartDetails);
     getCartData();
 
-    newTotal = parseFloat(total) + parseFloat($("#totalSpan").text());
-    console.log(newTotal);
+    // newTotal = parseFloat(total) + parseFloat($("#totalSpan").text());
+    // console.log(newTotal);
+    // $("#totalSpan").text(newTotal);
+    // $("#subTotal").val(newTotal);
+
+    calculateNetTotal();
+
+}
+
+function calculateNetTotal(){
+    newTotal=0;
+    for(let i=0; i<addToCartArray.length; i++){
+        newTotal=newTotal+addToCartArray[i].cartItemTotal;
+    }
     $("#totalSpan").text(newTotal);
-    $("#subTotal").val(newTotal);
 
 }
 
@@ -140,7 +151,14 @@ $("#discount").on("keydown keyup", function (e) {
 })
 
 $("#payment").on("keydown keyup",function(e){
+    if($("#discount").val().length>0){
+        $("#balance").val(parseFloat($("#payment").val())-parseFloat($("#subTotal").val()));
+
+    }else{
         $("#balance").val(parseFloat($("#payment").val())-parseFloat(newTotal));
+
+    }
+        
     
 })
 
