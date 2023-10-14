@@ -14,6 +14,9 @@ itemValidation.push({field:$("#qty"),regEx:ITEM_QTY_REGEX});
 
 function clearItemInputFields(){
     $("#id,#name,#type,#unitPrice,#qty").val("");
+    $("#id,#name,#type,#unitPrice,#qty").css("border", "1px solid #ced4da");
+    $("#id").focus();
+    setItemControllerBtn();
 }
 
 setItemControllerBtn();
@@ -93,7 +96,7 @@ function setItemControllerBtn() {
 
     let id = $("#id").val();
     if (searchItem(id) === undefined) {
-        $("#itemDeletBtn").prop("disabled", true);
+        $("#itemDeletBtn").prop("disabled", false);
         $("#itemUpdateBtn").prop("disabled", true);
     } else {
         $("#itemDeletBtn").prop("disabled", false);

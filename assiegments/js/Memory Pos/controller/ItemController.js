@@ -12,6 +12,7 @@ $("#itemSaveBtn").click(function () {
                 ItemDataBindEvents();
                 doubleCLickDeleteIetm();
                 loadItemIds();
+                $("#itemSaveBtn").prop("disabled", true);
 
         }
       
@@ -213,12 +214,7 @@ function doubleCLickDeleteIetm() {
 }
 
 
-// function clearItemTextFields(){
-//     $("#id").val("");
-//     $("#name").val("");
-//     $("#type").val("");
-//     $("#unitPrice").val("");
-//     $("#qty").val("");
-// }
-
+$("#clearItemBTn").click(function(){
+    clearItemInputFields();
+})
 

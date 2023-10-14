@@ -13,6 +13,7 @@ $("#customerSaveBtn").click(function () {
             doubleCLickDelete();
             customerbindEvents();
             loadCustomerIds();
+            $("#customerSaveBtn").prop("disabled", true);
         }
         
     }else{
@@ -236,10 +237,6 @@ function doubleCLickDelete() {
 
 
 
-// function clearInputFields() {
-//     $("#cId").val("");
-//     $("#cName").val("");
-//     $("#cAddress").val("");
-//     $("#cContact").val("");
-//     $("#cEmail").val("");
-// }
+$("#customerClearBTn").click(function(){
+    clearCustomerInputFields();
+})
