@@ -1,9 +1,9 @@
 
 let addToCartArray = [];
-let newTotal=0;;
+let newTotal = 0;;
 let total;
 
-$("#orderId").val(splitOrderId(orderDB[orderDB.length-1]));
+$("#orderId").val(splitOrderId(orderDB[orderDB.length - 1]));
 
 function loadCustomerIds() {
     $("#customerIdCmb").empty();
@@ -59,15 +59,15 @@ $("#addToCart").click(function () {
             });
 
         } else {
-            let item=searchItem($("#itemIdCmb").val());
+            let item = searchItem($("#itemIdCmb").val());
             console.log(item.qty);
-            if(parseInt($("#itemQtyCmb").val().trim())<=parseInt(item.qty)){
-               setPlaceOrderDetails();
-               
-            }else{
+            if (parseInt($("#itemQtyCmb").val().trim()) <= parseInt(item.qty)) {
+                setPlaceOrderDetails();
+
+            } else {
                 alert("not sufficient qty !");
             }
-            
+
 
         }
 
@@ -108,41 +108,50 @@ function setPlaceOrderDetails() {
 
     }
 
-    if(addToCartArray.length===0){
-        console.log('this is lenth',addToCartArray.length);
+    if (addToCartArray.length === 0) {
+        // console.log('this is lenth', addToCartArray.length);
         addToCartArray.push(cartDetails);
 
-    }else{
-        for(let i=0; i<addToCartArray.length; i++){
-            if(addToCartArray[i].cartItemId===$("#itemIdCmb").val()){
+    } else {
+        for (let i = 0; i < addToCartArray.length; i++) {
+            if (addToCartArray[i].cartItemId === $("#itemIdCmb").val()) {
                 alert("no you cant");
+                let NeworderDetails = searchOrder(addToCartArray[i].cartItemId);
+
+                NeworderDetails.cartItemQty = parseInt($("#itemQtyCmb").val()) + parseInt(addToCartArray[i].cartItemQty);
+                NeworderDetails.cartItemTotal = (parseFloat($("#itemPriceCmb").val()) * parseFloat($("#itemQtyCmb").val()) + parseFloat(addToCartArray[i].cartItemTotal));
+                // console.log("new qty",parseInt($("#itemQtyCmb").val())+parseInt(addToCartArray[i].cartItemQty));
+                getCartData();
+                calculateNetTotal();
+
+                // console.log(NeworderDetails.cartItemName );
                 return;
             }
         }
-       
-            // console.log("this is cartd",addToCartArray[i].cartItemId);
-            // console.log("this is cmbID",$("#itemIdCmb").val());
-            addToCartArray.push(cartDetails);
-            console.log("this is",addToCartArray);
 
-        
+        // console.log("this is cartd",addToCartArray[i].cartItemId);
+        // console.log("this is cmbID",$("#itemIdCmb").val());
+        addToCartArray.push(cartDetails);
+        // console.log("this is", addToCartArray);
+
+
 
     }
 
-     
-    
 
-    
+
+
+
     getCartData();
 
     calculateNetTotal();
 
 }
 
-function calculateNetTotal(){
-    newTotal=0;
-    for(let i=0; i<addToCartArray.length; i++){
-        newTotal=newTotal+addToCartArray[i].cartItemTotal;
+function calculateNetTotal() {
+    newTotal = 0;
+    for (let i = 0; i < addToCartArray.length; i++) {
+        newTotal = newTotal + addToCartArray[i].cartItemTotal;
     }
     $("#totalSpan").text(newTotal);
 
@@ -158,7 +167,7 @@ function getCartData() {
     <td>${addToCartArray[i].cartItemTotal}</td>
     </tr>`;
         $("#placeOrderTbody").append(tRow);
-     
+
     }
 
 }
@@ -169,16 +178,16 @@ $("#discount").on("keydown keyup", function (e) {
 
 })
 
-$("#payment").on("keydown keyup",function(e){
-    if($("#discount").val().length>0){
-        $("#balance").val(parseFloat($("#payment").val())-parseFloat($("#subTotal").val()));
+$("#payment").on("keydown keyup", function (e) {
+    if ($("#discount").val().length > 0) {
+        $("#balance").val(parseFloat($("#payment").val()) - parseFloat($("#subTotal").val()));
 
-    }else{
-        $("#balance").val(parseFloat($("#payment").val())-parseFloat(newTotal));
+    } else {
+        $("#balance").val(parseFloat($("#payment").val()) - parseFloat(newTotal));
 
     }
-        
-    
+
+
 })
 
 
@@ -187,11 +196,11 @@ $("#placeOrderBtn").click(function () {
     let newOrder = Object.assign({}, order);
     console.log($("#customerIdCmb ").val());
 
-    if($("#customerIdCmb ").val()===null |$("#payment").val().length===0 |$("#itemIdCmb ").val()===null|
-    $("#itemQtyCmb").val().length===0 ){
+    if ($("#customerIdCmb ").val() === null | $("#payment").val().length === 0 | $("#itemIdCmb ").val() === null |
+        $("#itemQtyCmb").val().length === 0) {
         alert("please fill all empty fields !")
-    }else{
-        if($("#balance").val()>=0){
+    } else {
+        if ($("#balance").val() >= 0) {
             for (let i = 0; i < addToCartArray.length; i++) {
                 newOrderDetails = {
                     orderId: $("#orderId").val(),
@@ -201,34 +210,42 @@ $("#placeOrderBtn").click(function () {
                 }
                 newOrder.orderDetails.push(newOrderDetails);
                 console.log("order detail", newOrderDetails);
-        
+
             }
-        
+
             /* set data to order */
-        
+
             newOrder = {
                 orderId: $("#orderId").val(),
                 custId: $("#customerIdCmb").val(),
                 orderDate: $("#date").val()
             }
             orderDB.push(newOrder);
-        
+
             // console.log("order", order);
             // console.log("befor", addToCartArray);
             addToCartArray = [];
             console.log("after", addToCartArray);
             $("#placeOrderTbody").empty();
-        
-            $("#orderId").val(splitOrderId(orderDB[orderDB.length-1].orderId));
-            alert("order placed sucessfully !");
-        
-            }else{
-                alert("insufficent credit to place order!");
-            }
-        }
-        /* set data to order details */
 
-     
+            $("#orderId").val(splitOrderId(orderDB[orderDB.length - 1].orderId));
+            Swal.fire(
+                'Order Saved Sucessfully',
+                'Order has been Placed sucessfully..!',
+                'success'
+            )
+
+        } else {
+            Swal.fire(
+                'Insufficient Credit',
+                'Insufficient Credit to place order..!',
+                'error'
+            )
+        }
+    }
+    /* set data to order details */
+
+
 
 })
 
@@ -244,5 +261,18 @@ function splitOrderId(currentId) {
     }
     return "OD-001";
 }
+
+function searchOrder(id) {
+    return addToCartArray.find(function (cartDetails) {
+        return cartDetails.cartItemId === id;
+    });
+
+}
+
+
+
+// function clearPlaceOrderFields(){
+
+// }
 
 

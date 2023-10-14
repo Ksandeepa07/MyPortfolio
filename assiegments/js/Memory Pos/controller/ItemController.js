@@ -28,7 +28,11 @@ $("#itemUpdateBtn").click(function () {
    let result= updateItem();
 
    if(result){
-    alert("Item Updated sucessfully!");
+    Swal.fire(
+        'Item Updated Sucessfully',
+        'Item has been Updated sucessfully..!',
+        'success'
+    )
     getAllItem();
     clearItemInputFields();
     ItemDataBindEvents();
@@ -46,7 +50,11 @@ $("#itemDeletBtn").click(function () {
    
     let result=deleteItem();
     if(result){
-        alert("Item Deleted sucessfully !");
+        Swal.fire(
+            'Item Deleted Sucessfully',
+            'Item has been Deleted sucessfully..!',
+            'success'
+        )
         getAllItem();
         ItemDataBindEvents();
         clearItemInputFields();

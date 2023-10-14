@@ -26,7 +26,11 @@ $("#customerSaveBtn").click(function () {
 $("#CustomerUpdateBtn").click(function () {
     let result = updateCustomer();
     if (result == true) {
-        alert("Customer Updated Sucessfully!");
+        Swal.fire(
+            'Customer Updated Sucessfully',
+            'Customer has been Updated sucessfully..!',
+            'success'
+        )
         getAllCustomer();
         clearCustomerInputFields();
         doubleCLickDelete();
@@ -41,7 +45,11 @@ $("#CustomerUpdateBtn").click(function () {
 $("#customerDeleteBtn").click(function () {
     let result = deleteCustomer();
     if (result == true) {
-        alert("Customer Deleted Sucessfully!");
+        Swal.fire(
+            'Customer Deleted Sucessfully',
+            'Customer has been Deleted sucessfully..!',
+            'success'
+        )
         getAllCustomer();
         clearCustomerInputFields();
         doubleCLickDelete();
