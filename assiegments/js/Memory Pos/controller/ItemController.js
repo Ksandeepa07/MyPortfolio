@@ -1,16 +1,20 @@
 $("#itemSaveBtn").click(function () {
     let reult=saveItem();
     if(reult){
-       Swal.fire(
-        'Item Saved Sucessfully',
-        'Item has been Saved sucessfully..!',
-        'success'
-    )
-        getAllItem();
-        clearItemInputFields();
-        ItemDataBindEvents();
-        doubleCLickDeleteIetm();
-        loadItemIds();
+        if(checkAllItemsValidation()){
+            Swal.fire(
+                'Item Saved Sucessfully',
+                'Item has been Saved sucessfully..!',
+                'success'
+            )
+                getAllItem();
+                clearItemInputFields();
+                ItemDataBindEvents();
+                doubleCLickDeleteIetm();
+                loadItemIds();
+
+        }
+      
     }else{
         alert("Error! Try Again !");
         clearItemInputFields();
@@ -60,7 +64,7 @@ $("#searcBtn").click(function () {
 
 
 function saveItem() {
-      if(searchItem($("#id").val())==undefined){
+      if(searchItem($("#id").val())===undefined){
         let newwItem = Object.assign({}, Item);
 
         let id=$("#id").val();
@@ -78,7 +82,7 @@ function saveItem() {
         itemDB.push(newwItem);
         return true;
       }else{
-          alert(" Item Id Is Available");
+          alert("Item Id Is Available");
       }
 
      

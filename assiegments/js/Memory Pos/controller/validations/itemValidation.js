@@ -73,7 +73,7 @@ function setItemControllerBorder(bol, ob) {
 
 }
 
-function checkAll() {
+function checkAllItemsValidation() {
     for (let i = 0; i < itemValidation.length; i++) {
         if (!checkValidations(itemValidation[i])) return false;
     }
@@ -85,7 +85,7 @@ function setItemControllerBtn() {
     $("#itemDeletBtn").prop("disabled", true);
     $("#itemUpdateBtn").prop("disabled", true);
 
-    if (checkAll()) {
+    if (checkAllItemsValidation()) {
         $("#itemSaveBtn").prop("disabled", false);
     } else {
         $("#itemSaveBtn").prop("disabled", true);

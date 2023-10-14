@@ -3,7 +3,11 @@ $("#customerSaveBtn").click(function () {
     let result = saveCustomer();
     if (result == true) {
         if(checkAll()){
-            alert("Customer Saved Sucessfully!");
+            Swal.fire(
+                'Customer Saved Sucessfully',
+                'Customer has been Saved sucessfully..!',
+                'success'
+            )
             getAllCustomer();
            clearCustomerInputFields();
             doubleCLickDelete();
