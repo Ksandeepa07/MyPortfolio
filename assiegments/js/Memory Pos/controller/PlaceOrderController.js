@@ -61,8 +61,8 @@ $("#addToCart").click(function () {
         } else {
             let item=searchItem($("#itemIdCmb").val());
             console.log(item.qty);
-            if($("#itemQtyCmb").val().trim()<=item.qty){
-                setPlaceOrderDetails();
+            if(parseInt($("#itemQtyCmb").val().trim())<=parseInt(item.qty)){
+               setPlaceOrderDetails();
                
             }else{
                 alert("not sufficient qty !");
@@ -108,13 +108,32 @@ function setPlaceOrderDetails() {
 
     }
 
-    addToCartArray.push(cartDetails);
-    getCartData();
+    if(addToCartArray.length===0){
+        console.log('this is lenth',addToCartArray.length);
+        addToCartArray.push(cartDetails);
 
-    // newTotal = parseFloat(total) + parseFloat($("#totalSpan").text());
-    // console.log(newTotal);
-    // $("#totalSpan").text(newTotal);
-    // $("#subTotal").val(newTotal);
+    }else{
+        for(let i=0; i<addToCartArray.length; i++){
+            if(addToCartArray[i].cartItemId===$("#itemIdCmb").val()){
+                alert("no you cant");
+                return;
+            }
+        }
+       
+            // console.log("this is cartd",addToCartArray[i].cartItemId);
+            // console.log("this is cmbID",$("#itemIdCmb").val());
+            addToCartArray.push(cartDetails);
+            console.log("this is",addToCartArray);
+
+        
+
+    }
+
+     
+    
+
+    
+    getCartData();
 
     calculateNetTotal();
 

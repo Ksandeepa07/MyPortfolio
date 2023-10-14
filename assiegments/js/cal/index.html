@@ -73,7 +73,7 @@
 
       <div class="row" style="height: 80px;">
         <div class="col-3">
-          <button class=" mt-2" style="width: 100px; height: 50px;">C</button>
+          <button id="clear" class=" mt-2" style="width: 100px; height: 50px;">C</button>
         </div>
         <div class="col-9">
           <input disabled type="text" class="form-control text-end bg-gradient mt-2  text-black "
@@ -476,6 +476,10 @@
       methodd=true;
 
     }
+
+    $("#clear").click(function(){
+      inputFiled.val("");
+    })
 
   </script>
 
