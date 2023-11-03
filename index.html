@@ -43,7 +43,8 @@
                 <li><a href="#contact">Contatct</a></li>
             </ul>
         </nav>
-        <a href=""><i class="fa fa-navicon"></i></a>
+        <a><i id="hamburgerMenu" class="fa fa-navicon"></i></a>
+        <a><i id="closHamburgerMenu" class="fa fa-remove"></i></a>
     </header>
 
 
@@ -165,6 +166,7 @@
                   <div class="snowflake">
                     &#10052;
                   </div> -->
+            </div>
 
         </section>
 
@@ -725,10 +727,24 @@
 
 
         <section id="loader">
-            <div ></div>
+            <div></div>
 
         </section>
 
+        <section class="mobileSideBar">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#aboutMe">About Me</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#assignments">Assigments</a></li>
+                    <li><a href="#contact">Contatct</a></li>
+                </ul>
+            </nav>
+        </section>
 
     </main>
 
@@ -778,11 +794,24 @@
         });
 
         const typed = new Typed('#typing', {
-            strings: ['Developer.', 'UI/UX Designer.','Web Developer.'],
+            strings: ['Developer.', 'UI/UX Designer.', 'Web Developer.'],
             typeSpeed: 200,
-            backspeed:200,
-            loop:true
+            backspeed: 200,
+            loop: true
         });
+
+        document.getElementById("hamburgerMenu").addEventListener("click", function () {
+            document.querySelector(".mobileSideBar").style.right = "0";
+            document.getElementById("hamburgerMenu").style.display = "none";
+            document.querySelector("#closHamburgerMenu").style.display = "block";
+        })
+
+        document.getElementById("closHamburgerMenu").addEventListener("click", function () {
+            document.querySelector(".mobileSideBar").style.right = "-250px";
+            document.getElementById("hamburgerMenu").style.display = "block";
+            document.querySelector("#closHamburgerMenu").style.display = "none";
+        })
+
 
     </script>
 
