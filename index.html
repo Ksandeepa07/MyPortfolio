@@ -53,7 +53,7 @@
             <section>
                 <div>
                     <p>WELCOME TO MY WORLD</p>
-                    <h1>Hi, I'm <span> Kaveen Sandeepa</span><br>a Developer</h1>
+                    <h1>Hi, I'm <span> Kaveen Sandeepa</span><br>a <span id="typing"></span></h1>
                     <p>Welcome to the personal portfolio website of a talented and passionate<br>
                         software engineer who is ready to take on the world of technology <br>
                         at just 21 years of age.</p>
@@ -768,12 +768,20 @@
 
 
     <script src="code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
 
         $(window).on('load', function () {
             $("#loader").css('display', 'none');
             $("#loader").fadeOut(1000);
             console.log("Window is fully loaded");
+        });
+
+        const typed = new Typed('#typing', {
+            strings: ['Developer.', 'UI/UX Designer.','Web Developer.'],
+            typeSpeed: 200,
+            backspeed:200,
+            loop:true
         });
 
     </script>
