@@ -20,6 +20,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Ksandeepa07&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="5e7b239e-853d-42e9-97a2-497b002ea1b1" />
+        <option name="url" value="https://github.com/Ksandeepa07/MyPortfolio.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -38,6 +52,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -58,7 +73,10 @@
       <workItem from="1696085854431" duration="261000" />
       <workItem from="1696135260650" duration="30000" />
       <workItem from="1699019191199" duration="842000" />
-      <workItem from="1699039913568" duration="263000" />
+      <workItem from="1699039913568" duration="1906000" />
+      <workItem from="1699155527518" duration="27000" />
+      <workItem from="1699156009535" duration="112000" />
+      <workItem from="1699157591922" duration="743000" />
     </task>
     <servers />
   </component>

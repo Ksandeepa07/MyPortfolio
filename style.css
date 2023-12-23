@@ -2225,6 +2225,15 @@ footer>section:nth-child(5)>p {
 
 /* /////////////////////////////start laptop design 02///////////////////////////*/
 @media all and (min-width:1441px) {
+    header>a:nth-child(3)>i {
+        display: none !important;
+
+    }
+
+    header>a:nth-child(4)>i {
+        display: none !important;
+
+    }
 
     main>section:nth-child(2)>svg:nth-child(3),
     main>section:nth-child(3)>svg:nth-child(3),
@@ -2436,6 +2445,16 @@ footer>section:nth-child(5)>p {
 
 /* /////////////////////////////start laptop design//////////////////////////////////////////////////////////////////////////////////////// */
 @media all and (min-width:1024px) and (max-width:1440px) {
+
+    header>a:nth-child(3)>i {
+        display: none !important;
+
+    }
+
+    header>a:nth-child(4)>i {
+        display: none !important;
+
+    }
 
     header h1 {
 
@@ -2883,6 +2902,16 @@ footer>section:nth-child(5)>p {
 
 /* /////////////////////////////start tablet design//////////////////////////////////////////////////////////////////////////////////////// */
 @media all and (min-width:768px) and (max-width:1023px) {
+    header>a:nth-child(3)>i {
+        display: none !important;
+
+    }
+
+    header>a:nth-child(4)>i {
+        display: none !important;
+
+    }
+
     header>h1 {
         font-size: 1rem;
         margin-top: 25px;
